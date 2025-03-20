@@ -1,6 +1,5 @@
 import React from "react";
 import "./herosection.css";
-import { Row, Col } from "react-bootstrap";
 
 function Herosection2() {
   return (

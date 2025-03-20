@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header class="fixed-top">
       <nav class="navbar navbar-expand-lg cont">
-        <div class="container-fluid p-4">
+        <div class="container-fluid p-2">
           <a class="navbar-brand text-white" href="#">
             Navbar
           </a>

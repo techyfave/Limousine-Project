@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.css";
 import "./bootstrap.min (1).css";
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
