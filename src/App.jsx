@@ -1,23 +1,18 @@
-import "./App.css";
+// import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Pages/Home/Navbar";
-import Home from "./Pages/Home/HomeScreen/Index";
+import Navbar from "./components/Navbar/Navbar";
+import Herosection from "./components/home/Herosection";
+import Herosection2 from "./components/home/Herosection2";
 
 function App() {
   return (
-	<>
-	  <div className="App">
-		<Router>
-		  <div>
-			<Navbar />
-			<Routes>
-			  <Route path="/" element={<Home />}></Route>
-			</Routes>
-		  </div>
-		</Router>
-	  </div>
-	</>
+    <>
+      <div className="App">
+        <Navbar />
+        <Herosection />
+        <Herosection2 />
+      </div>
+    </>
   );
 }
 

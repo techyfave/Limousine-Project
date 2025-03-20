@@ -1,0 +1,28 @@
+.hero-section{
+    background-image: url("/public/Img/CAR\ IMAGE\ 1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    padding-top: 450px;
+    padding-left: 40px;
+}
+
+.hero-section-container{
+    padding-top: 150px;
+    padding-left: 40px;
+}
+
+.hero-section2-box-1{
+    background-image: url("/public/Img/CAR\ IMAGE\ 1.jpg");
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.boxes{
+    width: 400px;
+    height: 500px;
+}
