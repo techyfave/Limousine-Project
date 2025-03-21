@@ -13,7 +13,7 @@
 
 .service-section-2{
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-image: url("/public/img/first-container-image 2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +21,7 @@
 
 .image-overlay{
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: rgba(5, 8, 51, 0.8);
+    padding-top: 125px;
 }
