@@ -1,0 +1,34 @@
+.executive-header{
+    height: 210px;
+}
+
+.executive-main{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.executive-boxes{
+    height: 100%;
+}
+
+.image-executive{
+    width: 100%;
+    height: 400px;
+    background-image: url("/public/Img/executive-transportation.jpg");
+    background-position: center;
+    border-radius: 10px;
+} 
+
+/* executive 2 container */
+
+.executive-2-container{
+    width: 100%;
+    height: 100%;
+    background-color: #e8e7f0;
+    padding-top: 80px;
+}
+
+.executive-2-items{
+    padding-left: 100px;
+    padding-right: 100px;
+}
