@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import About from "./components/about/About";
 import Footer from "./components/Footer/Footer";
+import Herosection from "./components/home/Herosection";
 import Privacy from "./components/privacy/Privacy";
+import About from "./components/about/About";
 
 function App() {
   return (
@@ -10,7 +11,6 @@ function App() {
       <div className="App">
         <Navbar />
         <Privacy />
-
         <Footer />
       </div>
     </>

@@ -3,19 +3,18 @@ import "./navbar.css";
 
 function Navbar() {
   return (
-    <header class="fixed-top">
+    <header className="fixed-top">
       <nav class="navbar navbar-expand-lg cont">
         <div class="container-fluid p-2">
-          <a class="navbar-brand text-white" href="#">
-            Navbar
-          </a>
+          <a class="navbar-brand text-white" href="#"></a>
+          <img src="/public/img/tranparent.png" alt="" height={80} />
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>

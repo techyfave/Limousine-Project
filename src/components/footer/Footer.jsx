@@ -8,12 +8,12 @@ function Footer() {
       <Row>
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box">
-            <h2 className="text-white">Logo</h2>
+            <img src="/public/img/tranparent.png" alt="" height={100} />
           </div>
         </Col>
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box">
-            <ul>
+            <ul className="footer-list">
               <li>
                 <a className="middle-box" href="#">
                   Coporate Transportation Service
@@ -80,7 +80,9 @@ function Footer() {
         </Col>
       </Row>
 
-      <p className="copy text-white fs-5 text-center">&copy;LR Car Services</p>
+      <p className="copy text-white fs-5 text-center">
+        &copy;Prince Executive Transport LLC
+      </p>
     </footer>
   );
 }
