@@ -1,79 +1,80 @@
 import React from "react";
 import "./footer.css";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer-color p-5">
+    <footer className="footer-color p-3 w-100">
       <Row>
         <Col sm={12} md={12} lg={4}>
-          <div className="footer-box">
-            <img src="/public/img/tranparent.png" alt="" height={100} />
+          <div className="footer-box pt-5">
+            <img src="/public/img/tranparent.png" alt="" height={80} />
           </div>
         </Col>
         <Col sm={12} md={12} lg={4}>
-          <div className="footer-box">
-            <ul className="footer-list">
+          <div className="footer-box pt-5">
+            <ul className="footer-list ">
               <li>
-                <a className="middle-box" href="#">
-                  Coporate Transportation Service
-                </a>
+                <Link to="/corporate" className="middle-box">
+                  Corporate Transportation Service
+                </Link>
               </li>
               <li>
-                <a className="middle-box" href="#">
+                <Link to="/event" className="middle-box">
                   Event Transportation Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="middle-box" href="">
-                  Executive Transportation services
-                </a>
+                <Link to="/executive" className="middle-box">
+                  Executive Transportation Service
+                </Link>
               </li>
               <li>
-                <a className="middle-box" href="#">
-                  Wedding Transportation Services
-                </a>
+                <Link to="/wedding" className="middle-box">
+                  Wedding Transportation Service
+                </Link>
               </li>
               <li>
-                <a className="middle-box" href="">
-                  Legal Transportation Services
-                </a>
+                <Link to="/legal" className="middle-box">
+                  Legal Transportation Service
+                </Link>
               </li>
             </ul>
           </div>
         </Col>
         <Col sm={12} md={12} lg={4}>
-          <div className="footer-box">
+          <div className="footer-box pt-5">
             <ul>
               <li>
-                <a className="right-box" href="#">
+                <Link className="right-box" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="right-box" href="#">
+                <Link className="right-box" to="/services">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="right-box" href="#">
+                <Link className="right-box" to="/howitworks">
                   How it works
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="right-box" href="#">
+                <Link className="right-box" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="right-box" href="#">
+                <Link className="right-box" to="/reservation">
                   Reservation
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="right-box" href="#">
+                <Link to="/privacy" className="right-box">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

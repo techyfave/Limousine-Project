@@ -5,10 +5,6 @@ import "./wedding.css";
 function Wedding() {
   return (
     <div>
-      <header className="wedding-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">Wedding Transportation Services</h1>
-      </header>
-
       <div className="mx-4 wedding-main">
         <Row>
           <Col sm={12} md={6} lg={6}>

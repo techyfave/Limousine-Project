@@ -1,58 +1,63 @@
 import React from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <header className="fixed-top">
-      <nav class="navbar navbar-expand-lg cont">
-        <div class="container-fluid p-2">
-          <a class="navbar-brand text-white" href="#"></a>
-          <img src="/public/img/tranparent.png" alt="" height={80} />
+      <nav className="navbar navbar-expand-lg cont">
+        <div className="container-fluid">
+          <Link className="navbar-brand text-white" to="/">
+            <img
+              src="/public/img/tranparent.png"
+              alt=""
+              height={80}
+              className="navbar-brand"
+            />
+          </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end fs-4"
+            className="collapse navbar-collapse justify-content-end fs-4"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#">
+            <ul className="navbar-nav fs-5">
+              <li className="nav-item">
+                <Link to="/about" className="nav-link text-white">
                   About
-                </a>
+                </Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <Link to="/services" className="nav-link text-white">
                   Services
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+                <Link to="/contact" className="nav-link text-white">
                   Contact
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+                <Link to="/reservation" className="nav-link text-white">
                   Reservation
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+                <p className="nav-link text-white ">
                   LIVE AGENTS AVAILABLE 24/7
-                </a>
+                </p>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary " href="#">
-                  +1-610-938-1411
-                </a>
+              <li className="nav-item">
+                <Link className="nav-link text-white">+1 610-938-1411</Link>
               </li>
             </ul>
           </div>

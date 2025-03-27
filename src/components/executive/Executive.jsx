@@ -5,10 +5,6 @@ import "./executive.css";
 function Executive() {
   return (
     <div>
-      <header className="executive-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">Executive Transportation Services</h1>
-      </header>
-
       <div className="mx-4 executive-main">
         <Row>
           <Col sm={12} md={6} lg={6}>

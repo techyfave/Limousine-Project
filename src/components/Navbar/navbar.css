@@ -1,3 +1,8 @@
 .cont{
     background-color: #0C173D;
 }
+
+.nav-link:hover{
+    border-bottom: 2px solid #5A86AD;
+    color: #5A86AD !important;
+}

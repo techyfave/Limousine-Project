@@ -14,9 +14,10 @@ import {
 function Services() {
   return (
     <div>
-      <header className="service-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
+      
+      {/* <header className="service-header w-100 d-flex justify-content-center align-items-center custom-color text-white pt-5">
         <h1 className="fs-2">Services</h1>
-      </header>
+      </header> */}
 
       <main>
         <div className="mx-5">

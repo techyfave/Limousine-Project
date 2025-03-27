@@ -5,10 +5,6 @@ import { Row, Col } from "react-bootstrap";
 function Contact() {
   return (
     <div>
-      <header className="contact-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">Contact</h1>
-      </header>
-
       <main className="mx-5 contact-main">
         <Row>
           <Col sm={12} md={6}>
@@ -54,7 +50,7 @@ function Contact() {
                   <p className="fw-bold">
                     Name{" "}
                     <span className="text-danger fs-6 fw-light">
-                       (Required)
+                      (Required)
                     </span>
                   </p>
                   <Row>
@@ -90,7 +86,7 @@ function Contact() {
                   <p className="fw-bold">
                     Email{" "}
                     <span className="text-danger fs-6 fw-light">
-                       (Required)
+                      (Required)
                     </span>
                   </p>
                   <Row>

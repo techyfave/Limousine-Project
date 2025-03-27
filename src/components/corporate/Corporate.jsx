@@ -5,10 +5,6 @@ import { Row, Col } from "react-bootstrap";
 function Corporate() {
   return (
     <div>
-      <header className="corporate-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-3">Corporate Transportation Services</h1>
-      </header>
-
       <main className="corporate-main">
         <div className="mx-4">
           <Row>

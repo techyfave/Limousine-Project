@@ -5,10 +5,6 @@ import { Row, Col } from "react-bootstrap";
 function About() {
   return (
     <div>
-      <header className="about-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">About</h1>
-      </header>
-
       <main className="mx-4 main-about">
         <Row>
           <Col sm={12} md={6} lg={6}>
@@ -51,7 +47,7 @@ function About() {
             </div>
           </Col>
 
-          <Col sm={12} md={12} lg={6}>
+          <Col sm={12} md={6} lg={6}>
             <div className="image-parent">
               <img
                 src="/public/img/edited-about-image.png"

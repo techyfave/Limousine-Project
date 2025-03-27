@@ -5,10 +5,6 @@ import "./reservation.css";
 function Reservation() {
   return (
     <div>
-      <header className="reservation-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">Reservation</h1>
-      </header>
-
       <main className="mx-4 reservation-main">
         <p>
           When you travel with LRCAR Service, you never travel alone. We

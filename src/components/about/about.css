@@ -3,16 +3,8 @@
     margin-bottom: 100px;
 }
 
-.about-header{
-    height: 200px;
-}
-
 header h1{
     padding-top: 90px;
-}
-
-.custom-color{
-    background-color: #5A86AD;
 }
 
 .text-color{
@@ -20,12 +12,5 @@ header h1{
 }
 
 .image-parent{
-    width: 50%;
     margin-top: 40px;
-}
-
-.image{
-    @media screen and (max-width: 1200px) {
-        width: 470px;
-    }
 }
