@@ -50,9 +50,17 @@ export default function Faqspage() {
             className="rounded crop-img responsive-img img-fluid" style={{ width: "600px"}}
           />
           <h2 className="schedule-travel">Schedule Your Travel Today</h2>
-          <button className="reservation-btn border-0 p-2 text-white rounded fs-4">
-            Make A Reservation
-          </button>
+          
+          <div className="d-flex justify-content-center">
+                          <Link to="/reservation">
+                          <button
+                            type="button"
+                            className="btn btn-info px-3 py-2 fs-5 mt-3"
+                          >
+                            Make Reservation
+                          </button>
+                          </Link>
+                        </div>
         </div>
       </div>
 
@@ -64,9 +72,14 @@ export default function Faqspage() {
           Ready to experience a new standard in executive transportation? 
           Schedule your first ride with us today.
         </h4>
-        <button className="reservation-btn border-0 p-2 text-white rounded fs-4">
-          Make A Reservation
-        </button>
+
+        <div className="d-flex justify-content-center">
+          <Link to="/reservation">
+              <button type="button" className="btn btn-info px-3 py-2 fs-5 mt-3">
+                          Make Reservation
+              </button>
+          </Link>
+          </div>
       </div>
     </>
   );
