@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./event.css";
+import { Link } from "react-router";
 
 function Event() {
   return (
@@ -37,12 +38,12 @@ function Event() {
                 customized to your preferences.
               </p>
 
+            <Link to="/contact">
               <button
                 type="button"
                 className="btn btn-info px-3 py-2 fs-5 mt-3"
-              >
-                Contact Us Today
-              </button>
+              > Contact Us Today </button>
+              </Link>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
@@ -52,12 +53,14 @@ function Event() {
                 Schedule Your Corporate Travel Today
               </h2>
               <div className="d-flex justify-content-center">
+                <Link to="/reservation">
                 <button
                   type="button"
                   className="btn btn-info px-3 py-2 fs-5 mt-3"
                 >
                   Make Reservation
                 </button>
+                </Link>
               </div>
             </div>
           </Col>

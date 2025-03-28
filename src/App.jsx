@@ -14,6 +14,7 @@ import Legalpage from "./Pages/Legalpage";
 import Privacypage from "./Pages/Privacypage";
 import Footer from "./components/footer/Footer";
 import Howitworkpage from "./Pages/Howitworkpage";
+import Faqspage from "./Pages/Faqspage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/legal" element={<Legalpage />} />
           <Route path="/privacy" element={<Privacypage />} />
           <Route path="/howitworks" element={<Howitworkpage />} />
+          <Route path="/frequently-asked-questions" element={<Faqspage />} />
         </Routes>
         <Footer />
       </div>

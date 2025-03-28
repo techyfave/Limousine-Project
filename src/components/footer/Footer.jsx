@@ -62,6 +62,9 @@ function Footer() {
                 </Link>
               </li>
               <li>
+                <Link className="right-box" to="/frequently-asked-questions">FAQ'S</Link>
+              </li>
+              <li>
                 <Link className="right-box" to="/contact">
                   Contact
                 </Link>

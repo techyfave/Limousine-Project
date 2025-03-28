@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router";
+
 import "./event.css";
 
 function Event2() {
@@ -62,9 +64,11 @@ function Event2() {
       </div>
 
       <div className="d-flex justify-content-center pb-5">
+        <Link to="/contact">
         <button type="button" className="btn btn-info px-3 py-2 fs-5 mt-3">
           Contact Us Today
         </button>
+        </Link>
       </div>
     </div>
   );

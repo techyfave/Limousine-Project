@@ -29,7 +29,7 @@ function Contact() {
               <p className="mb-2">Dispatch,</p>
               <p className="mb-2">LRCAR Services.</p>
               <p className="mb-5">
-                <a href="">dispatch@lrcarser.com</a>
+                <a href="mailto:dispatch@lrcarser.com">dispatch@lrcarser.com</a>
               </p>
 
               <p className="fw-bold fs-5 mb-2">Houston Office</p>

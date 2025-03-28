@@ -1,8 +1,10 @@
 import React from "react";
 import "./about.css";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router";
 
 function About() {
+
   return (
     <div>
       <main className="mx-4 main-about">
@@ -19,10 +21,11 @@ function About() {
                 will be satisfied with our professional and reliable corporate
                 and individual transport services.
               </p>
+              <Link to="/reservation">
               <button type="button" className="btn btn-info mt-3 mb-5">
                 Make Reservation
               </button>
-
+            </Link>
               <h2 className="text-color fw-bold">Constant Communication</h2>
               <p className="pt-3 fs-5">
                 At LR CAR, we excel in providing transportation for recurring
