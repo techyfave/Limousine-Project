@@ -37,7 +37,6 @@ function About() {
                 Our mission is to provide unparalleled luxury transportation
                 that ensures every journey is seamless, safe, and memorable
               </p>
-
               <p>
                 {" "}
                 <FontAwesomeIcon
@@ -51,7 +50,6 @@ function About() {
                 by consistently delivering exceptional quality, safety, and
                 comfort.
               </p>
-
               <p>
                 {" "}
                 <FontAwesomeIcon

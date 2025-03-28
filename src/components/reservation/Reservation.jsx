@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import "./reservation.css";
 
@@ -10,8 +11,7 @@ function Reservation() {
           When you travel with LRCAR Service, you never travel alone. We
           guarantee you will be satisfied with our professional and reliable
           transport services. Make a reservation by using the form below or
-          &nbsp;
-          <a href=""> contact us</a> at 610-938-1411
+          &nbsp;<Link to="/contact"> contact us</Link> at 610-938-1411
         </p>
 
         <div>

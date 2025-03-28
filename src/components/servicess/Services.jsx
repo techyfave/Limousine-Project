@@ -10,6 +10,7 @@ import {
   faCar,
   faEarthAmerica,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router";
 
 function Services() {
   return (
@@ -110,9 +111,11 @@ function Services() {
               customize receipt details to fit clients’ individual requirements.
             </p>
             <div className="d-flex justify-content-center">
+              <Link to="/reservation">
               <button type="button" className="btn btn-info mt-3 mb-5">
                 Make Reservation
               </button>
+              </Link>
             </div>
           </div>
         </div>

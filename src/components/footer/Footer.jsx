@@ -9,7 +9,9 @@ function Footer() {
       <Row>
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box pt-5">
+            <Link to="/">
             <img src="/public/img/tranparent.png" alt="" height={80} />
+            </Link>
           </div>
         </Col>
         <Col sm={12} md={12} lg={4}>
@@ -62,6 +64,9 @@ function Footer() {
                 <Link className="right-box" to="/howitworks">
                   How it works
                 </Link>
+              </li>
+              <li>
+                <Link className="right-box" to="/frequently-asked-questions">FAQ'S</Link>
               </li>
               <li>
                 <Link className="right-box" to="/contact">
