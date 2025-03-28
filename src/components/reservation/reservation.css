@@ -13,7 +13,7 @@ form p{
 }
 
 p span{
-    color: red;
+    /* color: red; */
     font-size: 13px;
     font-weight: lighter;
 }

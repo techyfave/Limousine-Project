@@ -1,8 +1,12 @@
-.cont{
-    background-color: #0C173D;
-}
+/* .cont{
+    background-color: rgb(0,0,0);
+} */
 
 .nav-link:hover{
-    border-bottom: 2px solid #5A86AD;
-    color: #5A86AD !important;
+    border-bottom: 2px solid #072b4b;
+    color: #072b4b !important;
+}
+
+.index{
+    z-index: 999;
 }

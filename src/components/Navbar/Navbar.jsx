@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <header className="fixed-top">
-      <nav className="navbar navbar-expand-lg cont">
+      <nav className="navbar navbar-expand-lg bg-secondary">
         <div className="container-fluid">
           <Link className="navbar-brand text-white" to="/">
             <img
@@ -33,22 +33,22 @@ function Navbar() {
             <ul className="navbar-nav fs-5">
               <li className="nav-item">
                 <Link to="/about" className="nav-link text-white">
-                  About
+                  ABOUT
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/services" className="nav-link text-white">
-                  Services
+                  SERVICES
                 </Link>
               </li>
               <li class="nav-item">
                 <Link to="/contact" className="nav-link text-white">
-                  Contact
+                  CONTACT
                 </Link>
               </li>
               <li class="nav-item">
                 <Link to="/reservation" className="nav-link text-white">
-                  Reservation
+                  RESERVATION
                 </Link>
               </li>
               <li class="nav-item">

@@ -1,9 +1,11 @@
 import React from "react";
 
-function Head({ text, styling }) {
+function Head({ text, styling, textStyle, bgOverlay }) {
   return (
-    <div>
-      <h2 className={styling}>{text} </h2>
+    <div className={styling}>
+      <div className={bgOverlay}>
+        <h2 className={textStyle}>{text} </h2>
+      </div>
     </div>
   );
 }

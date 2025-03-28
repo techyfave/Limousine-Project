@@ -9,7 +9,12 @@ function Aboutpage() {
 
   return (
     <div>
-      <Head text="About" styling="head" />
+      <Head
+        text="About Us"
+        styling="head"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
       <About />
     </div>
   );
