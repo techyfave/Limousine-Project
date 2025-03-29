@@ -4,7 +4,7 @@
 
 .main-about{
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .text-color{
@@ -14,3 +14,33 @@
 .image-parent{
     margin-top: 40px;
 }
+
+.about2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    @media screen and (max-width: 768px) {
+        padding: 50px;
+    }
+}
+
+.disabled{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.about3{
+    border-radius: 20px;
+}
+
+

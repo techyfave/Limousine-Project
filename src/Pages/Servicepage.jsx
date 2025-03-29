@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import Services from "../components/servicess/Services";
+import Services2 from "../components/servicess/Services2";
 import Head from "../components/head/Head";
 import "../components/head/head.css";
+import Services1 from "../components/servicess/Services1";
 
 function Servicepage() {
   useEffect(() => {
@@ -10,8 +11,14 @@ function Servicepage() {
 
   return (
     <div>
-      <Head text="Services" styling="head" className="fs-4" />
-      <Services />
+      <Head
+        text="Services"
+        styling="head"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
+      <Services1 />
+      <Services2 />
     </div>
   );
 }

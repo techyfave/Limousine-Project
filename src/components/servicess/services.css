@@ -1,10 +1,9 @@
-.service-header{
-   height: 220px;
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .service-box-container{
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .service-box{
@@ -22,6 +21,14 @@
 .image-overlay{
     width: 100%;
     height: 400px;
-    background-color: rgba(5, 8, 51, 0.8);
+    background-color: rgba(3, 3, 3, 0.8);
     padding-top: 125px;
+}
+
+.bg-gold{
+    background-color: rgb(182, 157, 17);
+}
+
+.bg-gold:hover{
+    background-color: rgb(116, 102, 22);
 }

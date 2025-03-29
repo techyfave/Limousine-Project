@@ -18,7 +18,7 @@ function About() {
               <h2 className="px-3">
                 Experience the <br /> Prestige of Royal Road
               </h2>
-              <p className="px-3 fs-4 py-3">
+              <p className="px-3 fs-4 py-2">
                 At Prince Executive Transport, we are dedicated to redefining
                 luxury travel. With a commitment to excellence and an unwavering
                 focus on customer satisfaction, we ensure that every journey is
@@ -63,14 +63,19 @@ function About() {
                 innovation, ensuring we consistently deliver exceptional service
                 and experiences.
               </p>
-            </div>
-
-            <div className="pt-5 d-flex justify-content-center">
-              <p className="btn-bg fs-5 d-inline">
-                <Link className="text-decoration-none text-white text-center">
-                  Contact Us for a Free Quote
-                </Link>
+              {/* <p>
+                {" "}
+                <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  className="text-gold float-start pt-4"
+                  size="2x"
+                />
               </p>
+              <p className="fs-4 px-5">
+                Our commitment is dedicated to continuous improvement and
+                innovation in our services, while maintaining the highest
+                standards of professionalism and customer satisfaction.
+              </p> */}
             </div>
           </Col>
 
@@ -84,6 +89,16 @@ function About() {
             </div>
           </Col>
         </Row>
+        <div className="pt-5 mt-2 d-flex justify-content-center">
+          <p className="btn-bg fs-5 d-inline">
+            <Link
+              to="/contact"
+              className="text-decoration-none text-white text-center"
+            >
+              Contact Us for a Free Quote
+            </Link>
+          </p>
+        </div>
       </main>
     </div>
   );
