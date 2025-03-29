@@ -1,0 +1,23 @@
+.reservation-header{
+    height: 210px;
+}
+
+.reservation-main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pick-up-time{
+    width: 90px;
+}
+
+form p{
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+p span{
+    color: red;
+    font-size: 13px;
+    font-weight: lighter;
+}

@@ -1,23 +1,19 @@
-import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Pages/Home/Navbar";
-import Home from "./Pages/Home/HomeScreen/Index";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Herosection from "./components/home/Herosection";
+import Privacy from "./components/privacy/Privacy";
+import About from "./components/about/About";
 
 function App() {
   return (
-	<>
-	  <div className="App">
-		<Router>
-		  <div>
-			<Navbar />
-			<Routes>
-			  <Route path="/" element={<Home />}></Route>
-			</Routes>
-		  </div>
-		</Router>
-	  </div>
-	</>
+    <>
+      <div className="App">
+        <Navbar />
+        <Privacy />
+        <Footer />
+      </div>
+    </>
   );
 }
 

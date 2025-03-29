@@ -1,0 +1,33 @@
+.wedding-header{
+    height: 210px;
+}
+
+.wedding-main{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.wedding-boxes{
+    height: 100%;
+}
+
+.image-wedding{
+    width: 100%;
+    height: 500px;
+    background-image: url("/public/Img/wedding-transportation.jpg");
+    background-position: center;
+    border-radius: 10px;
+} 
+
+/* wedding 2 container  */
+.wedding-2-container{
+    width: 100%;
+    height: 100%;
+    background-color: #e8e7f0;
+    padding-top: 80px;
+}
+
+.wedding-2-items{
+    padding-left: 100px;
+    padding-right: 100px;
+}
