@@ -1,14 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./legal.css";
+import { Link } from "react-router";
 
 function Legal() {
   return (
     <div>
-      <header className="legal-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">Legal Transportation Services</h1>
-      </header>
-
       <div className="mx-4 legal-main">
         <Row>
           <Col sm={12} md={6} lg={6}>
@@ -46,13 +43,14 @@ function Legal() {
                 the law. Let’s work together to achieve success in and out of
                 the courtroom.
               </p>
-
+            <Link to="/contact">
               <button
                 type="button"
                 className="btn btn-info px-3 py-2 fs-5 mb-5"
               >
                 Contact Us Today
               </button>
+              </Link>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
@@ -62,12 +60,14 @@ function Legal() {
                 Schedule Your Legal Travel Today
               </h2>
               <div className="d-flex justify-content-center">
+                <Link to="/reservation">
                 <button
                   type="button"
                   className="btn btn-info px-3 py-2 fs-5 mt-3"
                 >
                   Make Reservation
                 </button>
+                </Link>
               </div>
             </div>
           </Col>

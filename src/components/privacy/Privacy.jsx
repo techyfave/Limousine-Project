@@ -4,10 +4,6 @@ import "./privacy.css";
 function Privacy() {
   return (
     <div>
-      <header className="privacy-header d-flex justify-content-center align-items-center custom-color text-white pt-5">
-        <h1 className="fs-2">Privacy Policy</h1>
-      </header>
-
       <div className="m-4">
         <h3 className="fs-5 fw-bold">Privacy and Policy</h3>
         <p className="fs-5 my-4">

@@ -1,18 +1,10 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .main-about{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.about-header{
-    height: 200px;
-}
-
-header h1{
-    padding-top: 90px;
-}
-
-.custom-color{
-    background-color: #5A86AD;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .text-color{
@@ -20,12 +12,35 @@ header h1{
 }
 
 .image-parent{
-    width: 50%;
     margin-top: 40px;
 }
 
-.image{
-    @media screen and (max-width: 1200px) {
-        width: 470px;
+.about2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    @media screen and (max-width: 768px) {
+        padding: 50px;
     }
 }
+
+.disabled{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.about3{
+    border-radius: 20px;
+}
+
+

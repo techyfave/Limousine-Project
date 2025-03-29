@@ -1,14 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./wedding.css";
 
 function Wedding() {
   return (
     <div>
-      <header className="wedding-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-2">Wedding Transportation Services</h1>
-      </header>
-
       <div className="mx-4 wedding-main">
         <Row>
           <Col sm={12} md={6} lg={6}>
@@ -38,12 +35,12 @@ function Wedding() {
                 guests—arrives on time and in style.
               </p>
 
-              <button
-                type="button"
-                className="btn btn-info px-3 py-2 fs-5 mt-3"
-              >
-                Contact Us Today
-              </button>
+
+               <Link to="/contact" >
+                      <button type="button" className="btn btn-info px-3 py-2 fs-5 mt-3">
+                        Contact Us Today
+                      </button>
+                      </Link>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
@@ -53,12 +50,14 @@ function Wedding() {
                 Schedule Your Wedding Transportation Today
               </h2>
               <div className="d-flex justify-content-center">
+                <Link to="/reservation">
                 <button
                   type="button"
                   className="btn btn-info px-3 py-2 fs-5 mt-3"
                 >
                   Make Reservation
                 </button>
+                </Link>
               </div>
             </div>
           </Col>

@@ -1,0 +1,103 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-gold{
+    color: rgb(182, 157, 17);
+}
+
+.hero-section{
+    background-image: url("/public/Img/CAR\ IMAGE\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media screen and (max-width: 768px) {
+       background-position: center; 
+    }
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text-container{
+    margin-bottom: 100px;
+}
+
+.hero-text{
+    color: #fff;
+    padding-top: 400px;
+    font-size: 50px;
+}
+
+.hero-link{
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.hero-link:hover{
+    border-bottom: 2px solid #0C173D;;
+    color: rgb(182, 157, 17) !important;
+}
+/* End of hero-section */
+
+/* start hero section box one */
+.hero-section-boxes{
+    background-color: #fff;
+    padding-top: 100px;
+}
+
+.hero1{
+    border-radius: 30px;
+}
+
+.hero1-image{
+    border-radius: 20px;
+}
+
+/* End of hero section box one */
+
+/* start of hero secton box 2 */
+.hero-box{
+    top: -100px;
+    padding-top: 100px;
+}
+
+.gold-color{
+    color:rgb(107, 93, 12);
+}
+
+.btn-bg{
+    background-color: rgb(172, 149, 18);
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.btn-bg:hover{
+    background-color: rgb(107, 92, 5);
+}
+/* End of hero-section 3 */
+
+/* start hero-section 4 */
+.hero-3{
+    padding-bottom: 80px;
+}
+
+.hero3-box1{
+    border: 2px solid #5A86AD;
+    box-shadow: -3px 3px 10px 2px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    position: relative;
+    left: 80px;
+    top: 70px;
+
+    @media screen and (max-width: 768px) {
+        left: 0px;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+}

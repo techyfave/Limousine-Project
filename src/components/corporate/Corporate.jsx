@@ -1,14 +1,11 @@
 import React from "react";
 import "./corporate.css";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router";
 
 function Corporate() {
   return (
     <div>
-      <header className="corporate-header w-100 d-flex justify-content-center align-items-center custom-color text-white">
-        <h1 className="fs-3">Corporate Transportation Services</h1>
-      </header>
-
       <main className="corporate-main">
         <div className="mx-4">
           <Row>
@@ -45,13 +42,14 @@ function Corporate() {
                   quality, you can trust us to deliver an elevated travel
                   experience every time you step into one of our cars.
                 </p>
-
+                <Link to="/services" >
                 <button
                   type="button"
                   className="btn btn-info px-3 py-2 fs-5 mb-5"
                 >
                   View Our Services
                 </button>
+                </Link>
               </div>
             </Col>
 
@@ -62,12 +60,14 @@ function Corporate() {
                   Schedule Your Corporate Travel Today
                 </h2>
                 <div className="d-flex justify-content-center">
+                  <Link to="/reservation" >
                   <button
                     type="button"
                     className="btn btn-info px-3 py-2 fs-5 mt-3"
                   >
                     Make Reservation
                   </button>
+                  </Link>
                 </div>
               </div>
             </Col>
