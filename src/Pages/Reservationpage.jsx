@@ -9,7 +9,12 @@ function Reservationpage() {
 
   return (
     <div>
-      <Head text="Reservation" styling="head" />
+      <Head
+        text="Reservation"
+        styling="head"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
       <Reservation />
     </div>
   );

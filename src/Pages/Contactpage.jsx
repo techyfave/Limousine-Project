@@ -9,7 +9,13 @@ function Contactpage() {
 
   return (
     <div>
-      <Head text="Contact" styling="head" className="fs-4" />
+      <Head
+        text="Contact"
+        styling="head"
+        className="fs-4"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
       <Contact />
     </div>
   );
