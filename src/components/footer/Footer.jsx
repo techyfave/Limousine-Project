@@ -10,7 +10,7 @@ function Footer() {
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box pt-5">
             <Link to="/">
-            <img src="/public/img/tranparent.png" alt="" height={80} />
+              <img src="/public/img/tranparent.png" alt="" height={80} />
             </Link>
           </div>
         </Col>
@@ -20,27 +20,27 @@ function Footer() {
             <ul className="footer-list fs-5">
               <li>
                 <Link to="/corporate" className="middle-box">
-                  Corporate Transportation Service
-                </Link>
-              </li>
-              <li>
-                <Link to="/event" className="middle-box">
-                  Event Transportation Service
+                  Corporate Transportation
                 </Link>
               </li>
               <li>
                 <Link to="/executive" className="middle-box">
-                  Executive Transportation Service
+                  Executive Transportation
+                </Link>
+              </li>
+              <li>
+                <Link to="/executive" className="middle-box">
+                  Birthdays
                 </Link>
               </li>
               <li>
                 <Link to="/wedding" className="middle-box">
-                  Wedding Transportation Service
+                  Wedding
                 </Link>
               </li>
               <li>
-                <Link to="/legal" className="middle-box">
-                  Legal Transportation Service
+                <Link to="/event" className="middle-box">
+                  Events
                 </Link>
               </li>
             </ul>
@@ -66,7 +66,9 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="right-box" to="/frequently-asked-questions">FAQ'S</Link>
+                <Link className="right-box" to="/frequently-asked-questions">
+                  FAQ'S
+                </Link>
               </li>
               <li>
                 <Link className="right-box" to="/contact">

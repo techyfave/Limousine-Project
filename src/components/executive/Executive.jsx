@@ -11,65 +11,72 @@ function Executive() {
         <Row>
           <Col sm={12} md={6} lg={6}>
             <div>
-              <h2 className="fs-2 fw-bold">
+              <p className="fs-4 text-gold">
+                <span className="text-info fs-4">/</span> Elegance meets
+                Efficency
+              </p>
+              <h2 className="">
                 Executive Comfort and Reliable <br />
                 Transportation
               </h2>
-              <p className="pt-3 pb-5 fs-5">
-                <span className="fw-bold">
-                  When every second counts, trust our commitment to punctuality
-                  and precision.
-                </span>{" "}
-                Arrive at your destination poised and ready to conquer the day,
-                knowing you’ve chosen a service that moves seamlessly with your
-                schedule.
+              <p className="py-3 fs-5">
+                When every moment matters, rely on our pledge to punctuality and
+                precision. Reach your destination prepared and ready to excel,
+                knowing you’ve selected a service that aligns seamlessly with
+                your schedule.
               </p>
 
-              <h2 className="fs-3 fw-bold">
-                Bespoke Services for Discerning Clients
+              <h2 className="fs-3">
+                Tailored Services for Discerning Travelers
               </h2>
               <p className="py-3 fs-5">
-                <span>
-                  Tailored to meet the unique demands of each traveler, our
-                  personalized services go beyond the conventional.
-                </span>
-                Whether you require a quiet haven for reflection or dynamic
-                collaboration space on the move, we adapt to your needs,
-                ensuring each aspect of your journey is uniquely yours.
+                Crafted to meet the specific needs of every traveler, our
+                customized services exceed the ordinary. Whether you need a
+                serene space for contemplation or an interactive setting for
+                collaboration on the go, we adjust to your requirements,
+                ensuring that every part of your journey is distinctly yours.
               </p>
 
-              <p className="pb-5 fs-5">
-                Move forward with a service designed to support your aspirations
-                and streamline your path to achievement. With us, your journey
-                is more than just travel—it’s a seamless extension of your
-                professional narrative, reflecting ambition and sophistication
-                at every turn. Contact us today to schedule your travel.
+              <p className="pb-3 fs-5">
+                Embark on a service designed to enhance your goals and simplify
+                your path to success. With us, your travel experience becomes
+                more than just a trip—it transforms into a natural extension of
+                your professional story, showcasing drive and elegance at every
+                step.
               </p>
-              <Link to="/contact">
-              <button
-                type="button"
-                className="btn btn-info px-3 py-2 fs-5 mt-3"
-              >
-                Contact Us Today
-              </button>
-              </Link>
+              <div className="pt-3 ">
+                <p className="btn-bg fs-5 d-inline">
+                  <Link
+                    to="/services"
+                    className="text-decoration-none text-white text-center"
+                  >
+                    View Our Services
+                  </Link>
+                </p>
+              </div>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <div className="executive-boxes box-2">
-              <div className="image-executive"></div>
-              <h2 className="fs-3 fw-bold pt-4 text-center">
-                Schedule Your Corporate Travel Today
+            <div>
+              <div className="w-100 mt-5">
+                <img
+                  src="/public/img/executive-transportation.jpg "
+                  alt=""
+                  className="w-100 rounded"
+                />
+              </div>
+              <h2 className="fs-3 pt-4 text-center">
+                Plan Your Executive Travel Today
               </h2>
               <div className="d-flex justify-content-center">
-                <Link to="/reservation" >
-                <button
-                  type="button"
-                  className="btn btn-info px-3 py-2 fs-5 mt-3"
-                >
-                  Make Reservation
-                </button>
-                </Link>
+                <p className="btn-bg fs-5 d-inline">
+                  <Link
+                    to="/reservation"
+                    className="text-decoration-none text-white text-center"
+                  >
+                    Make Reservation
+                  </Link>
+                </p>
               </div>
             </div>
           </Col>

@@ -9,7 +9,12 @@ function Legalpage() {
   }, []);
   return (
     <div>
-      <Head text="Legal Transportation Service" styling="head" />
+      <Head
+        text="Legal Transportation Service"
+        styling="head"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
       <Legal />
       <Legal2 />
     </div>

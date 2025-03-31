@@ -6,11 +6,14 @@ import "./event.css";
 
 function Event2() {
   return (
-    <div className="px-4 event-2-container pb-4">
-      <h2 className="fs-2 fw-bold text-center">
+    <div className="px-4 event-2-container pb-4 bg-light w-100">
+      <p className="fs-4 text-gold text-center">
+        <span className="text-info fs-4">/</span> Effortless Event Travel
+      </p>
+      <h2 className="fs-2 text-center">
         Why Choose Our Event Transportation Services?
       </h2>
-      <p className="text-center pt-3 pb-5 fs-5">
+      <p className="text-center py-3 fs-5">
         We understand how important timeliness is on your event day. Our drivers
         are committed to ensuring every appointment runs smoothly and
         stress-free.
@@ -19,19 +22,19 @@ function Event2() {
       <div className="event-2-items mb-4">
         <Row>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">On-Time Arrival Guaranteed</h2>
-              <p className="fs-5">
-                Timeliness is at the heart of our service. With 24/7 monitoring
-                and real-time updates, you can trust us to get you where you
-                need to be, exactly when you need to be there.
+            <div className="bg-secondary p-4 rounded mt-3">
+              <h2 className="fs-4">On-Time Arrival Guaranteed</h2>
+              <p>
+                Punctuality lies at the core of our service. With 24/7
+                monitoring and up-to-the-minute updates, you can count on us to
+                take you where you need to be, right when you need to be there.
               </p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">Luxurious Comfort and Style</h2>
-              <p className="fs-5">
+            <div className="bg-secondary p-4 rounded mt-3">
+              <h2 className="fs-4">Luxurious Comfort and Style</h2>
+              <p className="">
                 From sleek sedans to spacious SUVs, our fleet of elegant
                 vehicles ensures you travel with a touch of sophistication.
                 Enjoy plush seating, climate control, and all the amenities
@@ -40,35 +43,37 @@ function Event2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">Tailored Packages</h2>
-              <p className="fs-5">
-                Our Services are tailored to your unique needs. Whether your
-                event requires a single ride or a full-day service, we create
-                customized packages to match your specific requirements.
+            <div className="bg-secondary p-4 rounded mt-3">
+              <h2 className="fs-4">Customized Packages</h2>
+              <p className="py-4">
+                Our services are designed to cater to your unique needs. Whether
+                your event entails a single ride or a full-day service, we
+                create tailored packages to fit your specific requirements.
               </p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">24/7 Availability</h2>
-              <p className="fs-5">
-                Peace of mind is priceless. Our dedicated support team is
-                available round-the-clock to assist with logistics, changes, or
-                emergencies. We guarantee timeliness, safety, and
-                professionalism at all times.
+            <div className="bg-secondary p-4 rounded mt-3">
+              <h2 className="fs-4">24/7 Availability</h2>
+              <p className="pt-3">
+                Peace of mind is invaluable. Our dedicated support team is here
+                24/7 to assist with logistics, adjustments, and emergencies. We
+                ensure timeliness, safety, and professionalism at every turn.
               </p>
             </div>
           </Col>
         </Row>
       </div>
 
-      <div className="d-flex justify-content-center pb-5">
-        <Link to="/contact">
-        <button type="button" className="btn btn-info px-3 py-2 fs-5 mt-3">
-          Contact Us Today
-        </button>
-        </Link>
+      <div className="pt-3 d-flex justify-content-center">
+        <p className="btn-bg fs-5 d-inline">
+          <Link
+            to="/contact"
+            className="text-decoration-none text-white text-center"
+          >
+            Contact Us Today
+          </Link>
+        </p>
       </div>
     </div>
   );
