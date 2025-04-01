@@ -22,17 +22,7 @@ function Event2() {
       <div className="event-2-items mb-4">
         <Row>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 rounded mt-3">
-              <h2 className="fs-4">On-Time Arrival Guaranteed</h2>
-              <p>
-                Punctuality lies at the core of our service. With 24/7
-                monitoring and up-to-the-minute updates, you can count on us to
-                take you where you need to be, right when you need to be there.
-              </p>
-            </div>
-          </Col>
-          <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 rounded mt-3">
+            <div className="bg-secondary p-4 rounded mt-3 transitionBtn">
               <h2 className="fs-4">Luxurious Comfort and Style</h2>
               <p className="">
                 From sleek sedans to spacious SUVs, our fleet of elegant
@@ -42,18 +32,19 @@ function Event2() {
               </p>
             </div>
           </Col>
+          
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 rounded mt-3">
-              <h2 className="fs-4">Customized Packages</h2>
-              <p className="py-4">
-                Our services are designed to cater to your unique needs. Whether
-                your event entails a single ride or a full-day service, we
-                create tailored packages to fit your specific requirements.
+            <div className="bg-secondary p-4 rounded mt-3 transitionBtn">
+              <h2 className="fs-4">On-Time Arrival Guaranteed</h2>
+              <p>
+                Punctuality lies at the core of our service. With 24/7
+                monitoring and up-to-the-minute updates, you can count on us to
+                take you where you need to be, right when you need to be there.
               </p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 rounded mt-3">
+            <div className="bg-secondary p-4 rounded mt-3 transitionBtn">
               <h2 className="fs-4">24/7 Availability</h2>
               <p className="pt-3">
                 Peace of mind is invaluable. Our dedicated support team is here
@@ -62,6 +53,17 @@ function Event2() {
               </p>
             </div>
           </Col>
+          <Col sm={12} md={6} lg={3}>
+            <div className="bg-secondary p-4 rounded mt-3 transitionBtn">
+              <h2 className="fs-4">Customized Packages</h2>
+              <p className="py-4">
+                Our services are designed to cater to your unique needs. Whether
+                your event entails a single ride or a full-day service, we
+                create tailored packages to fit your specific requirements.
+              </p>
+            </div>
+          </Col>
+          
         </Row>
       </div>
 

@@ -155,7 +155,7 @@ function Contact() {
                   </label>
 
                   <textarea
-                    className="form-control"
+                    className="form-control resize"
                     placeholder="Leave a comment here"
                     id="floatingTextarea"
                     rows={8}

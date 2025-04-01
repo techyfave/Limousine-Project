@@ -2,6 +2,7 @@ import React from "react";
 import "./corporate.css";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router";
+import Button from "../Button";
 
 function Corporate() {
   return (
@@ -46,7 +47,14 @@ function Corporate() {
                     >
                       View Our Services
                     </Link>
+                  
                   </p>
+                  <Link
+                      to="/services"
+                    >
+                  <Button text="view our services" btnStyle="btn"/>
+                  </Link>
+
                 </div>
               </div>
             </Col>

@@ -11,3 +11,6 @@
 .form{
     margin-top: 120px;
 }
+.resize{
+resize: none;
+}
