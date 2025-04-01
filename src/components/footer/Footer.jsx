@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-secondary p-3 w-100">
+    <footer className="bg-primary p-3 w-100">
       <Row>
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box pt-5">
@@ -15,8 +15,8 @@ function Footer() {
           </div>
         </Col>
         <Col sm={12} md={12} lg={4}>
-          <div className="footer-box pt-5">
-            <h3 className="text-black">Services...</h3>
+          <div className="w-100 pt-5">
+            <h3 className="text-white">Services...</h3>
             <ul className="footer-list fs-5">
               <li>
                 <Link to="/corporate" className="middle-box">
@@ -29,8 +29,8 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/executive" className="middle-box">
-                  Birthdays
+                <Link to="/legal" className="middle-box">
+                  Legal Transportation{" "}
                 </Link>
               </li>
               <li>
@@ -48,7 +48,7 @@ function Footer() {
         </Col>
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box pt-5">
-            <h3 className="text-black text-end">Quick Links</h3>
+            <h3 className="text-white text-end">Quick Links</h3>
             <ul className="footer-list fs-5">
               <li>
                 <Link className="right-box" to="/about">

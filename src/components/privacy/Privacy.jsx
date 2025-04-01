@@ -19,9 +19,7 @@ function Privacy() {
           statement.
         </p>
 
-        <h3 className="fs-5 fw-bold">
-          Collection of your Personal Information
-        </h3>
+        <h3 className="fs-5">Collection of your Personal Information</h3>
         <p className="fs-5 my-4">
           In order to better provide you with products and services offered,
           Prince Executive Transport may collect personally identifiable

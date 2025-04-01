@@ -30,7 +30,7 @@ function Herosection() {
               Your Premier Limousine Experience
             </h2>
 
-            <div className="w-100 bg-secondary p-4 hero1 position-relative">
+            <div className="w-100 bg-primary p-4 hero1 position-relative">
               <Row>
                 <Col sm={12} md={6} lg={6}>
                   <div className=" w-100 ">

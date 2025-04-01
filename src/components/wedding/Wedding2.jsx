@@ -19,7 +19,7 @@ function Wedding2() {
       <div className="wedding-2-items mb-4">
         <Row>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 mt-3 rounded">
+            <div className="bg-primary text-white p-4 mt-3 rounded">
               <h2 className="fs-4">A Touch of Luxury</h2>
               <p className="fs-6">
                 Step into sophistication with our fleet of comfortable, elegant
@@ -29,7 +29,7 @@ function Wedding2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 mt-3 rounded">
+            <div className="bg-primary text-white p-4 mt-3 rounded">
               <h2 className="fs-4 ">Professional Drivers</h2>
               <p className="fs-6">
                 Our licensed, experienced drivers specialize in seamless,
@@ -39,7 +39,7 @@ function Wedding2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 mt-3 rounded">
+            <div className="bg-primary text-white p-4 mt-3 rounded">
               <h2 className="fs-4">Customizable Packages</h2>
               <p className="fs-6">
                 From intimate ceremonies to large celebrations, our tailored
@@ -48,7 +48,7 @@ function Wedding2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-secondary p-4 mt-3 rounded">
+            <div className="bg-primary text-white p-4 mt-3 rounded">
               <h2 className="fs-4">24/7 Availability</h2>
               <p className="fs-6">
                 Peace of mind is priceless. Our dedicated support team is

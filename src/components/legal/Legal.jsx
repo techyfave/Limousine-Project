@@ -9,32 +9,29 @@ function Legal() {
       <div className="mx-4 legal-main">
         <Row>
           <Col sm={12} md={6} lg={6}>
+            <p className="fs-4 text-gold">
+              <span className="text-info fs-4">/</span> Premier Legal Transport
+            </p>
             <div>
-              <h2 className="fs-2 fw-bold">
-                Transportation Tailored for Legal Professionals
-              </h2>
-              <p className="pt-3 pb-5 fs-5">
-                <span className="fw-bold">LR Car Services</span> offers
-                discreet, luxury transportation for lawyers and law firms who
-                need to stay productive while on the move. From real-time
-                itinerary updates to a mobile office environment, we provide
-                more than just a ride—we provide time.
+              <h2 className="fs-2">Premium Legal Transportation Service</h2>
+              <p className="py-3 fs-5">
+                At Prince Executive Transport, we provide discreet and luxurious
+                transportation solutions specifically designed for lawyers and
+                legal professionals. Whether you’re heading to court, a client
+                meeting, or a deposition, our services ensure your journey is
+                productive and stress-free.
               </p>
 
-              <h2 className="fs-3 fw-bold">
+              <h2 className="fs-3">
                 Simplify Your Commute, Focus on Your Case
               </h2>
               <p className="py-3 fs-5">
-                <span className="fw-bold">
-                  Transportation is an integral part of a lawyer’s daily
-                  routine,
-                </span>{" "}
-                but it doesn’t have to be a hindrance to their productivity. Our
-                services are designed to simplify your commute and allow you to
-                focus on your cases instead.
+                Transportation is a crucial aspect of a lawyer’s daily routine.
+                That’s why we offer a seamless travel experience that allows you
+                to focus on your cases rather than your commute.
               </p>
 
-              <p className="fs-5 pb-5">
+              <p className="fs-5 pb-3">
                 Say goodbye to stressful and unproductive commutes. With our
                 legal transportation solutions, you can turn your travel time
                 into valuable work time. Trust us to simplify your commute so
@@ -43,31 +40,41 @@ function Legal() {
                 the law. Let’s work together to achieve success in and out of
                 the courtroom.
               </p>
-            <Link to="/contact">
-              <button
-                type="button"
-                className="btn btn-info px-3 py-2 fs-5 mb-5"
-              >
-                Contact Us Today
-              </button>
-              </Link>
+              <div className="pt-3 ">
+                <p className="btn-bg fs-5 d-inline">
+                  <Link
+                    to="/services"
+                    className="text-decoration-none text-white text-center"
+                  >
+                    View Our Services
+                  </Link>
+                </p>
+              </div>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <div className="legal-boxes box-2">
-              <div className="image-legal"></div>
-              <h2 className="fs-3 fw-bold pt-4 text-center">
+            <div>
+              <div className="w-100 mt-5">
+                <img
+                  src="/public/img/legal-transporatation.jpg"
+                  alt=""
+                  className="w-100 rounded"
+                />
+              </div>
+              <h2 className="fs-3  pt-4 text-center">
                 Schedule Your Legal Travel Today
               </h2>
               <div className="d-flex justify-content-center">
-                <Link to="/reservation">
-                <button
-                  type="button"
-                  className="btn btn-info px-3 py-2 fs-5 mt-3"
-                >
-                  Make Reservation
-                </button>
-                </Link>
+                <div className="pt-3 d-flex justify-content-center">
+                  <p className="btn-bg fs-5 d-inline">
+                    <Link
+                      to="/reservation"
+                      className="text-decoration-none text-white text-center"
+                    >
+                      Make Reservation
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
           </Col>

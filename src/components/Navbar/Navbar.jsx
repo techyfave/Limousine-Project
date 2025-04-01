@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <header className="fixed-top">
-      <nav className="navbar navbar-expand-lg bg-secondary">
+      <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
           <Link className="navbar-brand text-white" to="/">
             <img
@@ -23,21 +23,21 @@ function Navbar() {
           </Link>
           <button
             className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onclicl
+            // type="button"
+            // data-bs-toggle="collapse"
+            // data-bs-target="#navbarNav"
+            // aria-controls="navbarNav"
+            // aria-expanded="false"
+            // aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" onClick={toggleNavbar}></span>
           </button>
+
           <div
             className="collapse navbar-collapse justify-content-end fs-4"
             id="navbarNav"
           >
-            <ul className="navbar-nav fs-5">
+            <ul className="navbar-nav fs-5 ${isOpen ?'active :''}">
               <li className="nav-item">
                 <Link to="/about" className="nav-link text-white">
                   ABOUT

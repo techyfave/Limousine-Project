@@ -40,16 +40,16 @@ function Services1() {
                   services, perfect for special events or turning an ordinary
                   day into something extraordinary.
                 </p>
-                <p className="bg-secondary py-2 px-4 d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4 d-inline-block rounded-pill">
                   Proffesional Chauffers
                 </p>{" "}
-                <p className="bg-secondary py-2 px-4  d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4  d-inline-block rounded-pill">
                   Premium Vehicles
                 </p>{" "}
-                <p className="bg-secondary py-2 px-4  d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4  d-inline-block rounded-pill">
                   On-Time, Every-Time
                 </p>{" "}
-                <p className="bg-secondary py-2 px-4  d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4  d-inline-block rounded-pill">
                   Seamless Experience
                 </p>{" "}
                 <br />
@@ -62,7 +62,7 @@ function Services1() {
                 </div>
               </div>
             </Col>
-            <Col sm={12} md={12}  lg={6}>
+            <Col sm={12} md={12} lg={6}>
               <div className="w-100">
                 <img
                   src="/public/img/limo-service.jpg"

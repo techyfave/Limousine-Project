@@ -18,7 +18,7 @@ function Herosection2() {
                 <h2 className="text-white text-center fs-3 pb-3">
                   Streamlined Travel for Business Travelers
                 </h2>
-                <p className="text-black fs-5 bg-secondary p-4 hero1">
+                <p className="text-black fs-5 bg-primary p-4 hero1">
                   {" "}
                   &nbsp; Traveling for business can be stressful and
                   unpredictable. With Prince Executive Transport LLC, you can
@@ -50,7 +50,7 @@ function Herosection2() {
                 <h2 className="text-white text-center fs-3 pb-3">
                   Stay Connected While You Travel
                 </h2>
-                <p className="text-black fs-5 bg-secondary p-4 hero1">
+                <p className="text-black fs-5 bg-primary p-4 hero1">
                   {" "}
                   &nbsp; Our fleet of luxury SUVs and sedans comes equipped with
                   high-speed broadband Wi-Fi, allowing you to stay connected and
@@ -83,7 +83,7 @@ function Herosection2() {
               When you travel with Prince Executive Transport, you never travel
               alone.
             </h2>
-            <p className="text-center fs-5 px-5 py-3 bg-secondary text-black hero1">
+            <p className="text-center fs-5 px-5 py-3 bg-primary text-black hero1">
               We guarantee that you will be satisfied with our professional and
               reliable transportation services. Your journey begins with us,
               ensuring comfort, safety, and efficiency every step of the way.

@@ -32,10 +32,10 @@ function About2() {
             <div className="px-4">
               <p className="btn-bg fs-5 d-inline">
                 <Link
-                  to="/contact"
+                  to="/reservation"
                   className="text-decoration-none text-white text-center"
                 >
-                  Reserve a Ride
+                  Book a Ride
                 </Link>
               </p>
             </div>
@@ -44,7 +44,7 @@ function About2() {
       </div>
 
       <div className="d-flex pb-4 my-3">
-        <div className="bg-secondary w-100 h-100 about2">
+        <div className="bg-primary w-100 h-100 about2">
           <h2 className="pb-3">Step Into Elegance</h2>
           <p className="fs-5">
             Indulge in the luxury and sophistication you deserve. At Prince
@@ -56,7 +56,7 @@ function About2() {
           <div className="pt-4">
             <p className="btn-bg fs-5 d-inline">
               <Link
-                to="/contact"
+                to="/reservation"
                 className="text-decoration-none text-white text-center"
               >
                 Reserve a Ride
@@ -64,7 +64,7 @@ function About2() {
             </p>
           </div>
         </div>
-        <div className="bg-secondary text-secondary w-100 h-100 disabled">
+        <div className="bg-primary text-primary w-100 h-100 disabled">
           <h2 className="pb-3">Step Into Elegance</h2>
           <p className="fs-5">
             Indulge in the luxury and sophistication you deserve. At Prince

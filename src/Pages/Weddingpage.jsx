@@ -11,7 +11,7 @@ function Weddingpage() {
   return (
     <div>
       <Head
-        text="Weddinge"
+        text="Wedding"
         styling="head"
         textStyle="text"
         bgOverlay="bg-overlay"

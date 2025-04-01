@@ -12,11 +12,11 @@ function About3() {
         </p>
       </div>
 
-      <div className="px-5 pt-3">
+      <div className="px-3 pt-3">
         <Row>
           {" "}
           <Col sm={6} md={3} lg={3}>
-            <div className="bg-dark text-black p-4 about3">
+            <div className="bg-dark text-black p-4 about3 mt-3">
               <h2 className="fs-3">Unparalleled Luxury</h2>
               <p className="fs-5 pt-3">
                 Step into sophistication with our meticulously maintained fleet
@@ -27,7 +27,7 @@ function About3() {
             </div>
           </Col>
           <Col sm={6} md={3} lg={3}>
-            <div className="bg-dark text-black p-4 about3">
+            <div className="bg-dark text-black p-4 about3 mt-3">
               <h2 className="fs-3">Customized Services</h2>
               <p className="fs-5 pt-3">
                 No two journeys are the same. Whether it’s an elegant wedding, a
@@ -37,7 +37,7 @@ function About3() {
             </div>
           </Col>
           <Col sm={6} md={3} lg={3}>
-            <div className="bg-dark text-black p-4 about3">
+            <div className="bg-dark text-black p-4 about3 mt-3">
               <h2 className="fs-3">Professional Chauffeurs</h2>
               <p className="fs-5 pt-3">
                 Our chauffeurs are more than drivers—they’re hospitality
@@ -48,7 +48,7 @@ function About3() {
             </div>
           </Col>
           <Col sm={6} md={3} lg={3}>
-            <div className="bg-dark text-black p-4 about3">
+            <div className="bg-dark text-black p-4 about3 mt-3">
               <h2 className="fs-3"> Safety First</h2>
               <p className="fs-5 pt-3">
                 Your safety is our utmost concern. Our vehicles undergo regular
