@@ -9,7 +9,12 @@ function Howitworkpage() {
 
   return (
     <div>
-      <Head text="How it Works" styling="head" />
+      <Head
+        text="How it Works"
+        styling="head"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
       <Howitworks />
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 
 function Footer() {
   return (
@@ -16,16 +17,16 @@ function Footer() {
         </Col>
         <Col>
           <div className="d-flex justify-content-between mt-5 align-items-center text-white flex-wrap">
-            <h3>Get In Touch</h3>
-            <p className="pt-3">
+            <h3 className="pt-1">Get In Touch</h3>
+            <p className="pt-3 fs-5">
               Contact us today and experience luxury on the go
             </p>
-            <button>Get in Touch</button>
+            <Buttons text="Contact Us" linkTo="/contact" btnStyle="btn-bg" />
           </div>
         </Col>
       </Row>
 
-      <div className="w-100 p-5">
+      <div className="w-100 pt-5">
         <Row>
           <Col sm={6} md={4} lg={3}>
             <div className="pt-5">
@@ -97,13 +98,13 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/wedding" className="middle-box">
-                    Wedding
+                  <Link to="/event" className="middle-box">
+                    Events
                   </Link>
                 </li>
                 <li>
-                  <Link to="/event" className="middle-box">
-                    Events
+                  <Link to="/wedding" className="middle-box">
+                    Wedding
                   </Link>
                 </li>
               </ul>

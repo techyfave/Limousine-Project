@@ -3,7 +3,7 @@ import "./about.css";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 
 function About() {
   return (
@@ -63,19 +63,6 @@ function About() {
                 innovation, ensuring we consistently deliver exceptional service
                 and experiences.
               </p>
-              {/* <p>
-                {" "}
-                <FontAwesomeIcon
-                  icon={faCheckCircle}
-                  className="text-gold float-start pt-4"
-                  size="2x"
-                />
-              </p>
-              <p className="fs-4 px-5">
-                Our commitment is dedicated to continuous improvement and
-                innovation in our services, while maintaining the highest
-                standards of professionalism and customer satisfaction.
-              </p> */}
             </div>
           </Col>
 
@@ -90,14 +77,11 @@ function About() {
           </Col>
         </Row>
         <div className="pt-5 mt-2 d-flex justify-content-center">
-          <p className="btn-bg fs-5 d-inline">
-            <Link
-              to="/contact"
-              className="text-decoration-none text-white text-center"
-            >
-              Contact Us for a Free Quote
-            </Link>
-          </p>
+          <Buttons
+            text="View Our Services"
+            linkTo="/services"
+            btnStyle="btn-bg"
+          />
         </div>
       </main>
     </div>

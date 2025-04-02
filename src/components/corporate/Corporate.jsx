@@ -1,8 +1,7 @@
 import React from "react";
 import "./corporate.css";
 import { Row, Col } from "react-bootstrap";
-import { Link } from "react-router";
-import Button from "../Button";
+import Buttons from "../button/Buttons";
 
 function Corporate() {
   return (
@@ -40,21 +39,11 @@ function Corporate() {
                 </p>
 
                 <div className="pt-3 ">
-                  <p className="btn-bg fs-5 d-inline">
-                    <Link
-                      to="/services"
-                      className="text-decoration-none text-white text-center"
-                    >
-                      View Our Services
-                    </Link>
-                  
-                  </p>
-                  <Link
-                      to="/services"
-                    >
-                  <Button text="view our services" btnStyle="btn"/>
-                  </Link>
-
+                  <Buttons
+                    text="View Our Services"
+                    linkTo="/services"
+                    btnStyle="btn-bg"
+                  />
                 </div>
               </div>
             </Col>
@@ -72,14 +61,11 @@ function Corporate() {
                   Schedule Your Corporate Travel Today
                 </h2>
                 <div className="pt-3 d-flex justify-content-center">
-                  <p className="btn-bg fs-5 d-inline">
-                    <Link
-                      to="/reservation"
-                      className="text-decoration-none text-white text-center"
-                    >
-                      Make Reservation
-                    </Link>
-                  </p>
+                  <Buttons
+                    text="Make Reservation"
+                    linkTo="/reservation"
+                    btnStyle="btn-bg"
+                  />
                 </div>
               </div>
             </Col>

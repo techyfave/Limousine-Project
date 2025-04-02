@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 function Corporate2() {
   return (
@@ -59,17 +58,6 @@ function Corporate2() {
             </div>
           </Col>
         </Row>
-      </div>
-
-      <div className="pt-3 d-flex justify-content-center">
-        <p className="btn-bg fs-5 d-inline">
-          <Link
-            to="/contact"
-            className="text-decoration-none text-white text-center"
-          >
-            Contact Us Today
-          </Link>
-        </p>
       </div>
     </div>
   );

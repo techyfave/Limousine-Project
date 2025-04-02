@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 
 function About2() {
   return (
@@ -30,21 +31,14 @@ function About2() {
               </p>
             </div>
             <div className="px-4">
-              <p className="btn-bg fs-5 d-inline">
-                <Link
-                  to="/reservation"
-                  className="text-decoration-none text-white text-center"
-                >
-                  Book a Ride
-                </Link>
-              </p>
+              <Buttons text="Contact Us" linkTo="/contact" btnStyle="btn-bg" />
             </div>
           </Col>
         </Row>
       </div>
 
       <div className="d-flex pb-4 my-3">
-        <div className="bg-primary w-100 h-100 about2">
+        <div className="bg-primary w-100 h-100 about2 text-white">
           <h2 className="pb-3">Step Into Elegance</h2>
           <p className="fs-5">
             Indulge in the luxury and sophistication you deserve. At Prince
@@ -54,16 +48,15 @@ function About2() {
             comfort is unmatched.
           </p>
           <div className="pt-4">
-            <p className="btn-bg fs-5 d-inline">
-              <Link
-                to="/reservation"
-                className="text-decoration-none text-white text-center"
-              >
-                Reserve a Ride
-              </Link>
-            </p>
+            <Buttons
+              text="Reserve A Ride"
+              linkTo="/reservation"
+              btnStyle="btn-bg"
+            />
           </div>
         </div>
+
+        {/* Disabled, not to been seen on the webpage, it also requires the Link impoeted at the top*/}
         <div className="bg-primary text-primary w-100 h-100 disabled">
           <h2 className="pb-3">Step Into Elegance</h2>
           <p className="fs-5">
@@ -81,6 +74,7 @@ function About2() {
               ></Link>
             </p>
           </div>
+          {/* End of disabled */}
         </div>
       </div>
     </div>

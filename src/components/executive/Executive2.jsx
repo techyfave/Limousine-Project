@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import "./executive.css";
 
@@ -56,17 +55,6 @@ function Executive2() {
             </div>
           </Col>
         </Row>
-      </div>
-
-      <div className="pt-3 d-flex justify-content-center">
-        <p className="btn-bg fs-5 d-inline">
-          <Link
-            to="/contact"
-            className="text-decoration-none text-white text-center"
-          >
-            Contact Us Today
-          </Link>
-        </p>
       </div>
     </div>
   );

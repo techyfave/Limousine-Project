@@ -67,16 +67,6 @@
 .gold-color{
     color:rgb(107, 93, 12);
 }
-
-.btn-bg{
-    background-color: rgb(172, 149, 18);
-    padding: 10px 30px;
-    border-radius: 50px;
-}
-
-.btn-bg:hover{
-    background-color: rgb(107, 92, 5);
-}
 /* End of hero-section 3 */
 
 /* start hero-section 4 */

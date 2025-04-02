@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
@@ -16,14 +16,7 @@ function Services1() {
           <h2 className="px-3">
             Luxury Limousine <br /> Service in Your City
           </h2>
-          <p className="btn-bg fs-5 d-inline">
-            <Link
-              to="/contact"
-              className="text-decoration-none text-white text-center"
-            >
-              Contact Us
-            </Link>
-          </p>
+          <Buttons text="Contact Us" linkTo="/contact" btnStyle="btn-bg" />
         </div>
 
         <div className="my-4">
@@ -54,11 +47,7 @@ function Services1() {
                 </p>{" "}
                 <br />
                 <div className="mt-3">
-                  <p className="bg-gold d-inline fs-5 py-2 px-3 rounded-pill">
-                    <Link className="text-decoration-none text-white text-center">
-                      Book A Ride Today
-                    </Link>
-                  </p>
+                  <Buttons text="Our Fleet" linkTo="/about" btnStyle="btn-bg" />
                 </div>
               </div>
             </Col>

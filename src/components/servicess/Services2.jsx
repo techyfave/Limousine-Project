@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./services.css";
+import Buttons from "../button/Buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlaneDeparture,
@@ -10,7 +11,6 @@ import {
   faCar,
   faEarthAmerica,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router";
 
 function Services2() {
   return (
@@ -148,11 +148,11 @@ function Services2() {
               individual requirements.
             </p>
             <div className="mt-3 d-flex justify-content-center">
-              <p className="bg-gold d-inline fs-5 py-2 px-4 rounded-pill mt-3">
-                <Link className="text-decoration-none text-white text-center">
-                  Book a Ride Today
-                </Link>
-              </p>
+              <Buttons
+                text="Book A Ride Today"
+                linkTo="/reservation"
+                btnStyle="btn-bg"
+              />
             </div>
           </div>
         </div>
