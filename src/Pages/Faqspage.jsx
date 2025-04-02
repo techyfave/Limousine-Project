@@ -10,7 +10,12 @@ export default function Faqspage() {
 
   return (
     <div>
-    <Head text={'FAQS'} styling="head" />
+    <Head     
+    text="FAQS"
+    styling="head"
+    textStyle="text"
+    bgOverlay="bg-overlay"
+    />
 
     <FaqsComponent />
     

@@ -54,8 +54,14 @@ function Wedding() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <div className="wedding-boxes box-2">
-              <div className="image-wedding"></div>
+            <div className="w-100">
+              <div className="w-100">
+                <img
+                  src="/public/img/wedding-transportation.jpg"
+                  alt=""
+                  className="w-100 rounded"
+                />
+              </div>
               <h2 className="fs-3 pt-4 text-center">
                 Schedule Your Wedding Transportation Today
               </h2>

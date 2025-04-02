@@ -18,7 +18,7 @@ function Executive2() {
       <div className="executive-2-items mb-4">
         <Row>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-primary p-4 rounded mt-3">
+            <div className="bg-primary text-white p-4 rounded mt-3 transitionBtn">
               <h2 className="fs-4">Timely Notifications</h2>
               <p className="fs-6">
                 Keep up to date with your travel plans through continuous
@@ -28,17 +28,7 @@ function Executive2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-primary p-4 rounded mt-3">
-              <h2 className="fs-4">Stay Connected</h2>
-              <p className="fs-6">
-                Utilize dedicated high-speed WiFi to convert your travel time
-                into productive sessions or enjoy seamless leisure without
-                interruptions.
-              </p>
-            </div>
-          </Col>
-          <Col sm={12} md={6} lg={3}>
-            <div className="bg-primary p-4 rounded mt-3">
+            <div className="bg-primary text-white p-4 rounded mt-3 transitionBtn">
               <h2 className="fs-4">Work On-The-Go</h2>
               <p className="fs-6">
                 Our vehicles are equipped with ergonomic seating and adjustable
@@ -47,11 +37,21 @@ function Executive2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div className="bg-primary p-4 rounded mt-3">
+            <div className="bg-primary text-white p-4 rounded mt-3 transitionBtn">
               <h2 className="fs-4">Dependability</h2>
               <p className="fs-6">
                 Our professional chauffeurs guarantee punctuality, comfort, and
                 discretion, allowing you to concentrate on what truly matters.
+              </p>
+            </div>
+          </Col>
+          <Col sm={12} md={6} lg={3}>
+            <div className="bg-primary text-white p-4 rounded mt-3 transitionBtn">
+              <h2 className="fs-4">Stay Connected</h2>
+              <p className="fs-6">
+                Utilize dedicated high-speed WiFi to convert your travel time
+                into productive sessions or enjoy seamless leisure without
+                interruptions.
               </p>
             </div>
           </Col>

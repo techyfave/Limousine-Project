@@ -23,7 +23,7 @@ function Legal2() {
           <Col sm={12} md={6} lg={3}>
             <div className="bg-primary text-white p-4 rounded mt-3">
               <h2 className="fs-4">Real-Time Updates</h2>
-              <p className="fs-6">
+              <p className="fs-6 pt-2">
                 Stay informed of your travel itinerary with constant
                 communication, ensuring peace of mind and precision in
                 scheduling.
@@ -33,7 +33,7 @@ function Legal2() {
           <Col sm={12} md={6} lg={3}>
             <div className="bg-primary text-white p-4 rounded mt-3">
               <h2 className="fs-4">Stay Connected</h2>
-              <p className="fs-6">
+              <p className="fs-6 py-3">
                 With dedicated broadband WiFi, transform your travel time into
                 productive hours or enjoy uninterrupted leisure.
               </p>
@@ -42,7 +42,7 @@ function Legal2() {
           <Col sm={12} md={6} lg={3}>
             <div className="bg-primary text-white p-4 rounded mt-3">
               <h2 className="fs-4">Work On-The-Go</h2>
-              <p className="fs-6">
+              <p className="fs-6 pt-2">
                 Our vehicles are equipped with ergonomic seating and adjustable
                 workspaces, creating a perfect mobile office environment.
               </p>

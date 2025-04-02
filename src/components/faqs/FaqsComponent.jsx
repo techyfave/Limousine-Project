@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+
 import './faqs.css';
 
 export default function Faqspage() {
@@ -55,7 +56,7 @@ export default function Faqspage() {
                           <Link to="/reservation">
                           <button
                             type="button"
-                            className="btn btn-info px-3 py-2 fs-5 mt-3"
+                            className="text-gold btn btn-info px-3 py-2 fs-5 mt-3"
                           >
                             Make Reservation
                           </button>

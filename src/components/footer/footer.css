@@ -11,6 +11,7 @@
     color: white;
     font-size: larger;
     line-height: 2;
+    
 }
 
 .right-box{
@@ -18,12 +19,8 @@
     color: white;
     font-size: larger;
     line-height: 2;
-
-    display: flex;
-    justify-content: right;
-    align-items: right;
 }
 
 .copy{
-    margin-top: 120px;
+    margin-top: 50px;
 }
