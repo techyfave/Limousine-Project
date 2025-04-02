@@ -20,10 +20,10 @@ function About2() {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div>
-              <h2 className="px-4 pt-3">
+              <h2 className="px-4 pt-4 fs-3">
                 Delivering Unmatched <br /> Luxury With Royal <br /> Road
               </h2>
-              <p className="fs-4 px-4 py-3">
+              <p className="fs-5 px-4 py-3">
                 We offer a fleet of meticulously maintained luxury vehicles,
                 ensuring the highest standards of quality. Whether for an
                 airport transfer or a special event, our cars are designed to
@@ -39,7 +39,7 @@ function About2() {
 
       <div className="d-flex pb-4 my-3">
         <div className="bg-primary w-100 h-100 about2 text-white">
-          <h2 className="pb-3">Step Into Elegance</h2>
+          <h3 className="pb-3">Step Into Elegance</h3>
           <p className="fs-5">
             Indulge in the luxury and sophistication you deserve. At Prince
             Executive Transport, we invite you to experience a world where every
@@ -58,7 +58,7 @@ function About2() {
 
         {/* Disabled, not to been seen on the webpage, it also requires the Link impoeted at the top*/}
         <div className="bg-primary text-primary w-100 h-100 disabled">
-          <h2 className="pb-3">Step Into Elegance</h2>
+          <h3 className="pb-3">Step Into Elegance</h3>
           <p className="fs-5">
             Indulge in the luxury and sophistication you deserve. At Prince
             Executive Transport, we invite you to experience a world where every
