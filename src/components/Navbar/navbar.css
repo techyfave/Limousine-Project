@@ -1,7 +1,4 @@
-/* .cont{
-    background-color: rgb(0,0,0);
-} */
-
+/* 
 .nav-link:hover{
     border-bottom: 2px solid #aaaaaa;
     color: #aaaaaa !important;
@@ -9,4 +6,38 @@
 
 .index{
     z-index: 999;
-}
+} */
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #007bff; /* Match your bg-primary color */
+      padding: 1rem;
+      z-index: 1000;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-item {
+      margin: 0.5rem 0;
+    }
+  
+    .navbar-collapse.collapse {
+      display: none;
+    }
+  
+    .navbar-collapse.show {
+      display: block;
+    }
+  }
+  
+  /* Ensure the navbar stays fixed and has proper z-index */
+  .fixed-top {
+    z-index: 1030;
+  }
