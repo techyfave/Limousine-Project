@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +25,10 @@ function Navbar() {
           </Link>
           <button
             className="navbar-toggler"
-            // type="button"
-            // data-bs-toggle="collapse"
-            // data-bs-target="#navbarNav"
-            // aria-controls="navbarNav"
-            // aria-expanded="false"
-            // aria-label="Toggle navigation"
+            type="button"
+            onClick={toggleNavbar}
           >
-            <span class="navbar-toggler-icon" onClick={toggleNavbar}></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div
