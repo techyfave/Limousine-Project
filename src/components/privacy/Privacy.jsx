@@ -1,5 +1,6 @@
 import React from "react";
 import "./privacy.css";
+import { Link } from "react-router-dom";
 
 function Privacy() {
   return (
@@ -11,12 +12,12 @@ function Privacy() {
           Privacy applies to the Prince Executive Transport applications and
           governs data collection and usage. For the purposes of this Privacy
           Policy, unless otherwise noted, all references to Prince Executive
-          Transport include http://lrcarserv.com and any Prince Executive
-          Transport owned applications. The Prince Executive Transport
-          application is a web based application and the Driver application is
-          available on mobile devices. By using the Prince Executive Transport
-          applications, you consent to the data practices described in this
-          statement.
+          Transport include <Link>destinedadjuster@gmail.com</Link> and any
+          Prince Executive Transport owned applications. The Prince Executive
+          Transport application is a web based application and the Driver
+          application is available on mobile devices. By using the Prince
+          Executive Transport applications, you consent to the data practices
+          described in this statement.
         </p>
 
         <h3 className="fs-5">Collection of your Personal Information</h3>

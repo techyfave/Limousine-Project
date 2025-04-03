@@ -17,7 +17,6 @@ function Footer() {
         </Col>
         <Col>
           <div className="d-flex justify-content-between mt-5 align-items-center text-white flex-wrap">
-            <h3 className="pt-1">Get In Touch</h3>
             <p className="pt-3 fs-5">
               Contact us today and experience luxury on the go
             </p>
@@ -29,9 +28,9 @@ function Footer() {
       <div className="w-100 pt-5">
         <Row>
           <Col sm={6} md={4} lg={3}>
-            <div className="pt-5">
-              <h3 className="text-gold">Contact Us</h3>
+            <div className="">
               <ul className="footer-list">
+                <h4 className="text-gold">Contact Us</h4>
                 <li>
                   {" "}
                   <a
@@ -52,9 +51,9 @@ function Footer() {
             </div>
           </Col>
           <Col sm={6} md={4} lg={3}>
-            <div className="w-100 pt-5">
-              <h3 className="text-gold">About Us</h3>
+            <div className="w-100 ">
               <ul className="footer-list">
+                <h4 className="text-gold">About Us</h4>
                 <li>
                   <Link to="/about" className="middle-box ">
                     Our Story{" "}
@@ -79,9 +78,9 @@ function Footer() {
             </div>
           </Col>
           <Col sm={6} md={4} lg={3}>
-            <div className="w-100 pt-5">
-              <h3 className="text-gold">Services...</h3>
+            <div className="w-100">
               <ul className="footer-list">
+                <h4 className="text-gold">Services...</h4>
                 <li>
                   <Link to="/corporate" className="middle-box">
                     Corporate Transportation
@@ -111,10 +110,10 @@ function Footer() {
             </div>
           </Col>
           <Col sm={6} md={4} lg={3}>
-            <div className="pt-5">
+            <div className="">
               {" "}
-              <h3 className="text-gold">Quick Links</h3>
               <ul className="footer-list">
+                <h4 className="text-gold">Quick Links</h4>
                 <li>
                   <Link className="right-box" to="/howitworks">
                     How it works

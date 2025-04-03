@@ -19,7 +19,7 @@ function Contact() {
                 <span className="text-info fs-4">/</span> Connect with us
               </p>
               <h2 className=" pb-3">Get in Touch</h2>
-              <p className="fs-5 pr-2">
+              <p className="fs-5 pr-2 pb-3">
                 Prince Executive Transport is here to provide you with the best
                 limousine service experience! Whether you have questions about
                 our fleet, need assistance with booking, or want to discuss a
@@ -27,35 +27,45 @@ function Contact() {
               </p>
             </div>
             <div>
-              <h3>
+              <h4>
                 <FontAwesomeIcon icon={faEnvelope} />
                 &nbsp;&nbsp;Contact Us
-              </h3>
+              </h4>
               <span className="mb-2 fs-5 px-5">
                 Our friendly team is ready to assist you.
               </span>
-              <p className="mb-2 fs-5 px-5">
+              <p className="mb-4 fs-5 px-5 ">
                 Email:{" "}
-                <a href="mailto:estinedadjuster@gmail.com">
+                <a
+                  href="mailto:estinedadjuster@gmail.com"
+                  className="text-primary"
+                >
                   destinedadjuster@gmail.com
                 </a>
               </p>
 
-              <h3>
+              <h4>
                 <FontAwesomeIcon icon={faLocationDot} /> &nbsp; Office Location
-              </h3>
+              </h4>
               <span className="px-5 fs-5">Visit Us at Our Office</span>
               <br />
               <span className="px-5 fs-5">9626, S. Kirkwood Road, Suite B</span>
               <p className="px-5 fs-5">Houston, Texas. 77099</p>
 
-              <h3>
+              <h4>
                 <FontAwesomeIcon icon={faPhone} />
                 &nbsp;&nbsp;Phone Support
-              </h3>
-              <p>Available Monday to Friday, 8 AM to 5 PM:</p>
+              </h4>
+              <p className="px-5 fs-5">
+                Available Monday to Friday, 8 AM to 5 PM:
+              </p>
               <p>
-                <a href="tel:+1 610 938 1411">+1 610 938 1411</a>
+                <a
+                  href="tel:+1 610 938 1411"
+                  className="text-primary px-5 fs-5"
+                >
+                  +1 610 938 1411
+                </a>
               </p>
             </div>
           </Col>
@@ -63,10 +73,13 @@ function Contact() {
           {/* Form area  */}
           <Col sm={12} md={6}>
             <div className="bg-secondary p-4 form">
-              <h3>Elevate your Journey</h3>
+              <h4>Elevate your Journey</h4>
               <p className="fs-5">
                 You can reach out to us anytime at{" "}
-                <a href="mailto:estinedadjuster@gmail.com">
+                <a
+                  href="mailto:estinedadjuster@gmail.com"
+                  className="text-primary"
+                >
                   destinedadjuster@gmail.com
                 </a>
               </p>
