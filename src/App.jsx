@@ -16,6 +16,7 @@ import Privacypage from "./Pages/Privacypage";
 import Footer from "./components/footer/Footer";
 import Howitworkpage from "./Pages/Howitworkpage";
 import Faqspage from "./Pages/Faqspage";
+import Disabilities from "./components/servicess/Disabilities";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/privacy" element={<Privacypage />} />
           <Route path="/howitworks" element={<Howitworkpage />} />
           <Route path="/frequently-asked-questions" element={<Faqspage />} />
+          <Route path="/disability" element={<Disabilities />} />
         </Routes>
         <Footer />
       </div>

@@ -17,7 +17,9 @@ export default function Faqspage() {
           <Col>
             <div className="">
               <div className="">
-                <h3 className="">Is Wifi available in all Vehicles?</h3>
+                <h3 className="border-bottom border-top border-primary py-2 d-inline-block bor">
+                  Is Wifi available in all Vehicles?
+                </h3>
                 <p className="">
                   Yes, every vehicle in our fleet is equipped with dedicated{" "}
                   <br />
@@ -25,8 +27,10 @@ export default function Faqspage() {
                 </p>
               </div>
 
-              <div className="mt-5">
-                <h3 className="">Can I make last-minute itinerary changes?</h3>
+              <div className="mt-3">
+                <h3 className="border-bottom border-top border-primary py-2 d-inline-block bor">
+                  Can I make last-minute itinerary changes?
+                </h3>
                 <p className="">
                   Absolutely. Our service includes real-time updates, and we’re{" "}
                   <br />
@@ -34,8 +38,10 @@ export default function Faqspage() {
                 </p>
               </div>
 
-              <div className="mt-5">
-                <h3 className="">What areas do you operate in?</h3>
+              <div className="mt-3">
+                <h3 className="border-bottom border-top border-primary py-2 d-inline-block bor">
+                  What areas do you operate in?
+                </h3>
                 <p className="text2">
                   Our transportation services are available across major cities
                   and <br />
@@ -44,8 +50,10 @@ export default function Faqspage() {
                 </p>
               </div>
 
-              <div className="mt-5">
-                <h3 className="">How can I book the service?</h3>
+              <div className="mt-3">
+                <h3 className="border-bottom border-top border-primary py-2 d-inline-block bor">
+                  How can I book the service?
+                </h3>
                 <p className="">
                   Simply fill out our{" "}
                   <Link to="/reservation">reservation form</Link> or book via

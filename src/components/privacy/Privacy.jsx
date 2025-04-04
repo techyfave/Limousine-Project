@@ -186,9 +186,8 @@ function Privacy() {
           Prince Executive Transport welcomes your questions or comments
           regarding this Statement of Privacy. If you believe that Prince
           Executive Transport has not adhered to this Statement, please contact
-          LR Car Services at:
+          Prince Executive Transport LLC at:
         </p>
-        <p className="fs-5 my-4">Prince Executive Transport LLC</p>
         <p className="fs-5 my-4">9626, S. Kirkwood Road, Suite B</p>
         <p className="fs-5 my-4">Houston Texas 77099</p>
         <p className="fs-5 my-4">

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +16,7 @@ function Navbar() {
           <Link className="navbar-brand text-white" to="/">
             <img
               src="/public/img/tranparent.png"
-              alt=""
+              alt="executive logo"
               height={80}
               className="navbar-brand"
             />
@@ -28,14 +26,21 @@ function Navbar() {
             type="button"
             onClick={toggleNavbar}
           >
-            <span class="navbar-toggler-icon"></span>
+            <span
+              class="navbar-toggler-icon"
+              aria-controls="navbarNav"
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation"
+            ></span>
           </button>
 
           <div
-            className="collapse navbar-collapse justify-content-end fs-4"
+            className={`navbar-collapse bg-primary justify-content-end fs-4 ${
+              isOpen ? "show" : "collapse"
+            }`}
             id="navbarNav"
           >
-            <ul className="navbar-nav fs-5 ${isOpen ?'active :''}">
+            <ul className="navbar-nav fs-5">
               <li className="nav-item">
                 <Link to="/about" className="nav-link text-white">
                   ABOUT
@@ -46,18 +51,18 @@ function Navbar() {
                   SERVICES
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link to="/contact" className="nav-link text-white">
                   CONTACT
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link to="/reservation" className="nav-link text-white">
                   RESERVATION
                 </Link>
               </li>
-              <li class="nav-item">
-                <p className="nav-link text-white ">
+              <li className="nav-item">
+                <p className="nav-link text-white">
                   LIVE AGENTS AVAILABLE 24/7
                 </p>
               </li>

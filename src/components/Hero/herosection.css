@@ -29,7 +29,36 @@
     color: #fff;
     padding-top: 400px;
     font-size: 50px;
+
+    position: relative;
+
+    animation: princeExecutive 2s ease-in-out 3s 4 alternate;
+
 }
+
+@keyframes princeExecutive {
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translateX(200px);
+    }
+}
+
+.hero-text2{
+    animation: text2 2s linear 5s 1 alternate forwards;
+}
+
+@keyframes text2 {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
 
 .hero-link{
     text-decoration: none;

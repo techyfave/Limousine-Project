@@ -34,7 +34,7 @@ function Herosection() {
               <Row>
                 <Col sm={12} md={6} lg={6}>
                   <div className=" w-100 text-white mt-5">
-                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0">
+                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0 hero-text2">
                       Luxurious Fleet
                     </h2>
                     <p className="fs-5 px-lg-5">
@@ -68,7 +68,7 @@ function Herosection() {
                 </Col>
                 <Col sm={12} md={6} lg={6}>
                   <div className=" w-100 text-white mt-5">
-                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0">
+                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0 hero-text2">
                       Professional Chauffeurs
                     </h2>
                     <p className="fs-5 px-lg-5">
@@ -84,7 +84,7 @@ function Herosection() {
               <Row>
                 <Col sm={12} md={6} lg={6}>
                   <div className=" w-100 text-white mt-5">
-                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0">
+                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0 hero-text2">
                       Tailored Experience
                     </h2>
                     <p className="fs-5 px-lg-5">
