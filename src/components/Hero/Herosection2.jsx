@@ -18,7 +18,7 @@ function Herosection2() {
                 <h2 className="text-white text-center fs-3 pb-3">
                   Streamlined Travel for Business Travelers
                 </h2>
-                <p className="text-black fs-5 bg-secondary p-4 hero1">
+                <div className="text-black fs-5 bg-secondary p-4 hero1">
                   {" "}
                   &nbsp; Traveling for business can be stressful and
                   unpredictable. With Prince Executive Transport LLC, you can
@@ -41,7 +41,7 @@ function Herosection2() {
                       destination.
                     </li>
                   </ul>
-                </p>
+                </div>
               </div>
             </Col>
 

@@ -24,7 +24,7 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse justify-content-end fs-4"
@@ -41,17 +41,17 @@ function Navbar() {
                   SERVICES
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link to="/contact" className="nav-link text-white">
                   CONTACT
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link to="/reservation" className="nav-link text-white">
                   RESERVATION
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <p className="nav-link text-white ">
                   LIVE AGENTS AVAILABLE 24/7
                 </p>

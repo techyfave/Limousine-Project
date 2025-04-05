@@ -1,11 +1,102 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
+import { db } from "../../firebase/firebase";
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import emailjs from "emailjs-com"
 import "./reservation.css";
 
 function Reservation() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    pickup_date: "",
+    pickup_hour: "",
+    pickup_minute: "",
+    pickup_period: "AM",
+    pickup_location: "",
+    dropoff_location: "",
+    passengers: "",
+    service_type: "Airpot pick-up/drop-off",
+    captcha: "",
+    comments: "",
+  });
+
+
+  const [modal, setModal] = useState({ show: false, message: "", type: "" });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // CAPTCHA validation
+    if (formData.captcha !== "12") {
+      alert("Incorrect CAPTCHA answer.");
+      return;
+    }
+
+    const pickupTime = `${formData.pickup_hour}:${formData.pickup_minute} ${formData.pickup_period}`;
+
+    const reservationData = {
+      ...formData,
+      pickup_time: pickupTime,
+    };
+
+    try {
+      // Save data to Firebase
+      await addDoc(collection(db, "reservations"), reservationData);
+
+      // Send email via EmailJS
+      await emailjs.send(
+        "service_h98w2c8",
+        "template_ntr2i0o",
+        reservationData,
+        "V_ZWZy0yVNuywPrwJ"
+      );
+
+      setModal({ show: true, message: "Reservation submitted successfully!", type: "success" });
+      console.log("Modal state updated:", modal);
+
+      setTimeout(() => {
+        console.log("Modal should now be visible:", modal);
+      }, 100);
+
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        pickup_date: "",
+        pickup_hour: "",
+        pickup_minute: "",
+        pickup_period: "AM",
+        pickup_location: "",
+        dropoff_location: "",
+        passengers: "",
+        service_type: "Airpot pick-up/drop-off",
+        captcha: "",
+      });
+    } catch (error) {
+      console.error("Error submitting reservation:", error);
+      setModal({ show: true, message: "Failed to submit reservation. Please try again.", type: "error" });
+    }
+  };
+
   return (
     <div>
+      {modal.show && (
+        <div className="modal-overlay">
+        <div className={`reserve-modal ${modal.type}`}>
+          <p>{modal.message}</p>
+          <button onClick={() => setModal({ show: false, message: "", type: "" })} className="bg-primary">Close</button>
+        </div>
+        </div>
+      )}
       <main className="mx-4 reservation-main">
         <p>
           When you travel with LRCAR Service, you never travel alone. We
@@ -15,7 +106,7 @@ function Reservation() {
         </p>
 
         <div>
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <p>
               Name <span>(Required)</span>
             </p>
@@ -25,6 +116,9 @@ function Reservation() {
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-lg"
               required
+              name="name"
+              value={formData.name} 
+              onChange={handleChange}
             />
 
             <Row>
@@ -33,11 +127,14 @@ function Reservation() {
                   Phone <span>(Required)</span>
                 </p>
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
                   required
+                  name="phone"
+                  value={formData.phone} 
+                  onChange={handleChange}
                 />
               </Col>
               <Col>
@@ -45,10 +142,13 @@ function Reservation() {
                   Email <span>(Required)</span>
                 </p>
                 <input
-                  type="text"
+                  type="email"
                   className="form-control"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
+                  name="email"
+                  value={formData.email} 
+                  onChange={handleChange}
                   required
                 />
               </Col>
@@ -59,7 +159,14 @@ function Reservation() {
                 <p>
                   Pick-up Date <span>(Required)</span>
                 </p>
-                <input type="date" class="form-control" required></input>
+                <input 
+                type="date" 
+                className="form-control"
+                name="pickup_date"
+                value={formData.pickup_date} 
+                onChange={handleChange}
+                required
+                />
               </Col>
               <Col sm={12} md={6} lg={6}>
                 <p>
@@ -70,8 +177,10 @@ function Reservation() {
                   className="form-control-sm pick-up-time"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
-                  max={12}
-                  min={0}
+                  name="pickup_hour" 
+                  min="1" max="12" 
+                  value={formData.pickup_hour} 
+                  onChange={handleChange}
                   placeholder="HH"
                   required
                 />
@@ -80,16 +189,25 @@ function Reservation() {
                   className="form-control-sm m-2 pick-up-time"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
-                  max={59}
-                  min={0}
+                  name="pickup_minute" 
+                  min="0" 
+                  max="59" 
+                  value={formData.pickup_minute} 
+                  onChange={handleChange}
                   placeholder="MM"
                   required
                 />
-                <select class="form-select-sm pick-up-time" required>
-                  <option selected disabled value="">
+                <select 
+                className="form-select-sm pick-up-time"
+                name="pickup_period" 
+                value={formData.pickup_period} 
+                onChange={handleChange} 
+                required
+                >
+                  <option  value="AM">
                     AM
                   </option>
-                  <option>PM</option>
+                  <option value="PM">PM</option>
                 </select>
               </Col>
             </Row>
@@ -104,6 +222,9 @@ function Reservation() {
                   className="form-control"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
+                  name="pickup_location" 
+                  value={formData.pickup_location} 
+                  onChange={handleChange}
                   required
                 />
               </Col>
@@ -116,6 +237,9 @@ function Reservation() {
                   className="form-control"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
+                  name="dropoff_location" 
+                  value={formData.dropoff_location}
+                  onChange={handleChange}
                   required
                 />
               </Col>
@@ -131,6 +255,9 @@ function Reservation() {
                   className="form-control"
                   aria-label="Sizing example input"
                   aria-describedby="inputGroup-sizing-lg"
+                  name="passengers" 
+                  value={formData.passengers} 
+                  onChange={handleChange}
                   required
                 />
               </Col>
@@ -138,13 +265,25 @@ function Reservation() {
                 <p>
                   Service Type <span>(Required)</span>
                 </p>
-                <select class="form-select" id="validationDefault04" required>
-                  <option selected disabled value="">
+                <select className="form-select"
+                id="validationDefault04"
+                name="service_type" 
+                value={formData.service_type} 
+                onChange={handleChange}
+                required
+                >
+                  <option value="Airpot pick-up/drop-off">
                     Airpot pick-up/drop-off
                   </option>
-                  <option>Corporate transportation</option>
-                  <option>Global transportation</option>
-                  <option>Other </option>
+                  <option value='Corporate transportation'>
+                    Corporate transportation
+                    </option>
+                  <option value="Global transportation">
+                    Global transportation
+                  </option>
+                  <option value="Other">
+                    Other 
+                    </option>
                 </select>
               </Col>
             </Row>
@@ -157,8 +296,13 @@ function Reservation() {
               className="form-control"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-lg"
+              name="captcha" 
+              value={formData.captcha} 
+              onChange={handleChange}
               required
             />
+
+           <button type="submit">Submit Reservation</button>
           </form>
         </div>
       </main>
