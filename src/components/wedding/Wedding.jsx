@@ -1,31 +1,30 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 import "./wedding.css";
 
 function Wedding() {
   return (
     <div>
       <div className="mx-4 wedding-main">
+        <p className="fs-4 text-gold">
+          <span className="text-info fs-4">/</span> Premier Event Transport
+        </p>
         <Row>
           <Col sm={12} md={6} lg={6}>
             <div>
-              <h2 className="fs-2 fw-bold">
-                Luxurious transportation tailored to your perfect day
+              <h2 className="">
+                Elegant Transportation Customized for Your Special Day
               </h2>
-              <p className="pt-3 pb-5 fs-5">
-                Your wedding is one of the most important days of your
-                life—don’t leave anything to chance.{" "}
-                <span className="fw-bold">
-                  Our wedding transportation service guarantees on-time arrival,
-                  luxurious comfort, and a seamless experience,{"  "}
-                </span>
-                so you can focus on what matters most.
+              <p className="py-3 fs-5">
+                Your wedding is one of the most significant moments of your
+                life—don’t leave anything to chance. Our wedding transportation
+                services ensure timely arrivals, exceptional comfort, and a
+                smooth experience so you can concentrate on what truly matters.
               </p>
 
-              <h2 className="fs-2 fw-bold">
-                Ensuring a Seamless and Elegant <br />
-                Experience on Your Special Day.
+              <h2 className="fs-3">
+                Creating a Flawless and Stylish Experience on Your Big Day
               </h2>
               <p className="py-3 fs-5">
                 Planning a wedding is no small feat, and the last thing you want
@@ -34,30 +33,41 @@ function Wedding() {
                 ensures every member of your wedding party—along with your
                 guests—arrives on time and in style.
               </p>
+              <p className="fs-5">
+                Organizing a wedding is no easy task, and you shouldn't have to
+                worry about transportation. At LRC, we focus on delivering
+                luxurious and dependable wedding transportation that guarantees
+                every member of your wedding party, including your guests,
+                arrives on time and in style.
+              </p>
 
-
-               <Link to="/contact" >
-                      <button type="button" className="btn btn-info px-3 py-2 fs-5 mt-3">
-                        Contact Us Today
-                      </button>
-                      </Link>
+              <div className="pt-3 ">
+                <Buttons
+                  text="View Our Services"
+                  linkTo="/services"
+                  btnStyle="btn-bg"
+                />
+              </div>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <div className="wedding-boxes box-2">
-              <div className="image-wedding"></div>
-              <h2 className="fs-3 fw-bold pt-4 text-center">
+            <div className="w-100">
+              <div className="w-100">
+                <img
+                  src="/public/img/wedding-transportation.jpg"
+                  alt=""
+                  className="w-100 rounded"
+                />
+              </div>
+              <h2 className="fs-3 pt-4 text-center">
                 Schedule Your Wedding Transportation Today
               </h2>
-              <div className="d-flex justify-content-center">
-                <Link to="/reservation">
-                <button
-                  type="button"
-                  className="btn btn-info px-3 py-2 fs-5 mt-3"
-                >
-                  Make Reservation
-                </button>
-                </Link>
+              <div className="pt-3 d-flex justify-content-center">
+                <Buttons
+                  text="Make Reservation"
+                  linkTo="/reservation"
+                  btnStyle="btn-bg"
+                />
               </div>
             </div>
           </Col>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./privacy.css";
+import { Link } from "react-router-dom";
 
 function Privacy() {
   return (
@@ -11,17 +12,15 @@ function Privacy() {
           Privacy applies to the Prince Executive Transport applications and
           governs data collection and usage. For the purposes of this Privacy
           Policy, unless otherwise noted, all references to Prince Executive
-          Transport include http://lrcarserv.com and any Prince Executive
-          Transport owned applications. The Prince Executive Transport
-          application is a web based application and the Driver application is
-          available on mobile devices. By using the Prince Executive Transport
-          applications, you consent to the data practices described in this
-          statement.
+          Transport include <Link>destinedadjuster@gmail.com</Link> and any
+          Prince Executive Transport owned applications. The Prince Executive
+          Transport application is a web based application and the Driver
+          application is available on mobile devices. By using the Prince
+          Executive Transport applications, you consent to the data practices
+          described in this statement.
         </p>
 
-        <h3 className="fs-5 fw-bold">
-          Collection of your Personal Information
-        </h3>
+        <h3 className="fs-5">Collection of your Personal Information</h3>
         <p className="fs-5 my-4">
           In order to better provide you with products and services offered,
           Prince Executive Transport may collect personally identifiable
@@ -187,9 +186,8 @@ function Privacy() {
           Prince Executive Transport welcomes your questions or comments
           regarding this Statement of Privacy. If you believe that Prince
           Executive Transport has not adhered to this Statement, please contact
-          LR Car Services at:
+          Prince Executive Transport LLC at:
         </p>
-        <p className="fs-5 my-4">Prince Executive Transport LLC</p>
         <p className="fs-5 my-4">9626, S. Kirkwood Road, Suite B</p>
         <p className="fs-5 my-4">Houston Texas 77099</p>
         <p className="fs-5 my-4">

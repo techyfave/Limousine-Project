@@ -3,7 +3,7 @@ import "./about.css";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 
 function About() {
   return (
@@ -18,7 +18,7 @@ function About() {
               <h2 className="px-3">
                 Experience the <br /> Prestige of Royal Road
               </h2>
-              <p className="px-3 fs-4 py-2">
+              <p className="px-3 fs-5 py-4">
                 At Prince Executive Transport, we are dedicated to redefining
                 luxury travel. With a commitment to excellence and an unwavering
                 focus on customer satisfaction, we ensure that every journey is
@@ -33,7 +33,7 @@ function About() {
                   size="2x"
                 />
               </p>
-              <p className="fs-4 px-5">
+              <p className="fs-5 px-5 pt-4">
                 Our mission is to provide unparalleled luxury transportation
                 that ensures every journey is seamless, safe, and memorable
               </p>
@@ -45,7 +45,7 @@ function About() {
                   size="2x"
                 />
               </p>
-              <p className="fs-4 px-5">
+              <p className="fs-5 px-5 pt-2">
                 Our vision is to set the standard in the transportation industry
                 by consistently delivering exceptional quality, safety, and
                 comfort.
@@ -58,24 +58,11 @@ function About() {
                   size="2x"
                 />
               </p>
-              <p className="fs-4 px-5">
+              <p className="fs-5 px-5 pt-2">
                 Our values are centered around integrity, quality, and
                 innovation, ensuring we consistently deliver exceptional service
                 and experiences.
               </p>
-              {/* <p>
-                {" "}
-                <FontAwesomeIcon
-                  icon={faCheckCircle}
-                  className="text-gold float-start pt-4"
-                  size="2x"
-                />
-              </p>
-              <p className="fs-4 px-5">
-                Our commitment is dedicated to continuous improvement and
-                innovation in our services, while maintaining the highest
-                standards of professionalism and customer satisfaction.
-              </p> */}
             </div>
           </Col>
 
@@ -90,14 +77,11 @@ function About() {
           </Col>
         </Row>
         <div className="pt-5 mt-2 d-flex justify-content-center">
-          <p className="btn-bg fs-5 d-inline">
-            <Link
-              to="/contact"
-              className="text-decoration-none text-white text-center"
-            >
-              Contact Us for a Free Quote
-            </Link>
-          </p>
+          <Buttons
+            text="View Our Services"
+            linkTo="/services"
+            btnStyle="btn-bg"
+          />
         </div>
       </main>
     </div>

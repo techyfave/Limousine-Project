@@ -98,17 +98,20 @@ function Reservation() {
         </div>
       )}
       <main className="mx-4 reservation-main">
-        <p>
-          When you travel with LRCAR Service, you never travel alone. We
-          guarantee you will be satisfied with our professional and reliable
-          transport services. Make a reservation by using the form below or
-          &nbsp;<Link to="/contact"> contact us</Link> at 610-938-1411
+        <p className="fs-4 text-gold">
+          <span className="text-info fs-4">/</span> Book A Ride
+        </p>
+        <h2 className="pb-3">Reserve your Limousine Today</h2>
+        <p className="fs-5">
+          Booking your limousine with us is easy! Simply fill out our online
+          reservation form or give us a call. Let us know your requirements and
+          we’ll handle the rest.
         </p>
 
         <div>
           <form onSubmit={handleSubmit}>
             <p>
-              Name <span>(Required)</span>
+              Name <span className="text-danger">(Required)</span>
             </p>
             <input
               type="text"
@@ -124,7 +127,7 @@ function Reservation() {
             <Row>
               <Col>
                 <p>
-                  Phone <span>(Required)</span>
+                  Phone <span className="text-danger">(Required)</span>
                 </p>
                 <input
                   type="number"
@@ -139,7 +142,7 @@ function Reservation() {
               </Col>
               <Col>
                 <p>
-                  Email <span>(Required)</span>
+                  Email <span className="text-danger">(Required)</span>
                 </p>
                 <input
                   type="email"
@@ -157,7 +160,7 @@ function Reservation() {
             <Row>
               <Col>
                 <p>
-                  Pick-up Date <span>(Required)</span>
+                  Pick-up Date <span className="text-danger">(Required)</span>
                 </p>
                 <input 
                 type="date" 
@@ -170,7 +173,7 @@ function Reservation() {
               </Col>
               <Col sm={12} md={6} lg={6}>
                 <p>
-                  Pick-up Time <span>(Required)</span>
+                  Pick-up Time <span className="text-danger">(Required)</span>
                 </p>
                 <input
                   type="number"
@@ -215,7 +218,7 @@ function Reservation() {
             <Row>
               <Col>
                 <p>
-                  Pick-up Location <span>(Required)</span>
+                  Pick-up Location <span className="text-danger">(Required)</span>
                 </p>
                 <input
                   type="text"
@@ -230,7 +233,7 @@ function Reservation() {
               </Col>
               <Col>
                 <p>
-                  Drop-off Location <span>(Required)</span>
+                  Drop-off Location <span className="text-danger">(Required)</span>
                 </p>
                 <input
                   type="text"
@@ -248,7 +251,7 @@ function Reservation() {
             <Row>
               <Col>
                 <p>
-                  Passengers <span>(Required)</span>
+                  Passengers <span className="text-danger">(Required)</span>
                 </p>
                 <input
                   type="number"
@@ -263,7 +266,7 @@ function Reservation() {
               </Col>
               <Col>
                 <p>
-                  Service Type <span>(Required)</span>
+                  Service Type <span className="text-danger">(Required)</span>
                 </p>
                 <select className="form-select"
                 id="validationDefault04"
@@ -289,11 +292,11 @@ function Reservation() {
             </Row>
 
             <p>
-              What is ten + 2? <span>(Required)</span>
+              What is ten + 2? <span className="text-danger">(Required)</span>
             </p>
             <input
               type="text"
-              className="form-control"
+              className="form-control mb-5"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-lg"
               name="captcha" 
@@ -303,6 +306,11 @@ function Reservation() {
             />
 
            <button type="submit">Submit Reservation</button>
+            <div className="d-grid gap-2">
+              <button className=" btn btn-primary" type="button">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </main>

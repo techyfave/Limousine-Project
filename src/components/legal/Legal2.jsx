@@ -5,8 +5,8 @@ import { Link } from "react-router";
 
 function Legal2() {
   return (
-    <div className="px-4 legal-2-container pb-4">
-      <h2 className="fs-2 fw-bold text-center">
+    <div className="px-4 legal-2-container pb-4 bg-light">
+      <h2 className="fs-2 text-center">
         Seamlessly Travel Maximum Productivity
       </h2>
       <p className="text-center pt-3 pb-5 fs-5">
@@ -21,9 +21,9 @@ function Legal2() {
       <div className="legal-2-items mb-4">
         <Row>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">Real-Time Updates</h2>
-              <p className="fs-5">
+            <div className="bg-primary text-white p-4 rounded mt-3">
+              <h2 className="fs-4">Real-Time Updates</h2>
+              <p className="fs-6 pt-2">
                 Stay informed of your travel itinerary with constant
                 communication, ensuring peace of mind and precision in
                 scheduling.
@@ -31,41 +31,33 @@ function Legal2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">Stay Connected</h2>
-              <p className="fs-5">
+            <div className="bg-primary text-white p-4 rounded mt-3">
+              <h2 className="fs-4">Stay Connected</h2>
+              <p className="fs-6 py-3">
                 With dedicated broadband WiFi, transform your travel time into
                 productive hours or enjoy uninterrupted leisure.
               </p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">Work On-The-Go</h2>
-              <p className="fs-5">
+            <div className="bg-primary text-white p-4 rounded mt-3">
+              <h2 className="fs-4">Work On-The-Go</h2>
+              <p className="fs-6 pt-2">
                 Our vehicles are equipped with ergonomic seating and adjustable
                 workspaces, creating a perfect mobile office environment.
               </p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <div>
-              <h2 className="fs-3 fw-bold">Reliability You Can Trust</h2>
-              <p className="fs-5">
+            <div className="bg-primary text-white p-4 rounded mt-3">
+              <h2 className="fs-4 ">Reliability You Can Trust</h2>
+              <p className="fs-6">
                 Our professional drivers ensure punctuality, comfort, and
                 discretion, allowing you to focus on what matters most.
               </p>
             </div>
           </Col>
         </Row>
-      </div>
-
-      <div className="d-flex justify-content-center pb-5">
-        <Link to="/contact">
-        <button type="button" className="btn btn-info px-3 py-2 fs-5 mt-3">
-          Contact Us Today
-        </button>
-        </Link>
       </div>
     </div>
   );

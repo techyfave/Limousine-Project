@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="fixed-top">
-      <nav className="navbar navbar-expand-lg bg-secondary">
+      <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
           <Link className="navbar-brand text-white" to="/">
             <img
-              src="/public/img/tranparent.png"
-              alt=""
+              src="/img/tranparent.png"
+              alt="executive logo"
               height={80}
               className="navbar-brand"
             />
@@ -18,16 +24,23 @@ function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={toggleNavbar}
           >
             <span className="navbar-toggler-icon"></span>
+            <span
+              className="navbar-toggler-icon"
+              aria-controls="navbarNav"
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation"
+              >
+
+            </span>
           </button>
+
           <div
-            className="collapse navbar-collapse justify-content-end fs-4"
+            className={`navbar-collapse bg-primary justify-content-end fs-4 ${
+              isOpen ? "show" : "collapse"
+            }`}
             id="navbarNav"
           >
             <ul className="navbar-nav fs-5">
@@ -53,11 +66,13 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <p className="nav-link text-white ">
+                <span className="nav-link text-white">
                   LIVE AGENTS AVAILABLE 24/7
+                </span>
                 </p>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white">+1 610-938-1411</Link>
+                <Link to={"tel:+1610-938-1411"} className="nav-link text-white">+1 610-938-1411</Link>
               </li>
             </ul>
           </div>

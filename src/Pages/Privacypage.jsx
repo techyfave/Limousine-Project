@@ -9,7 +9,12 @@ function Privacypage() {
 
   return (
     <div>
-      <Head text="Privacy Policy" styling="head" />
+      <Head
+        text="Privacy Policy"
+        styling="head"
+        textStyle="text"
+        bgOverlay="bg-overlay"
+      />
       <Privacy />
     </div>
   );

@@ -10,6 +10,10 @@
     margin-top: 20px;
 }
 
+.service-box:hover{
+    transform: translateY(-10px);
+}
+
 .service-section-2{
     width: 100%;
     height: 400px;

@@ -30,11 +30,11 @@ function Herosection() {
               Your Premier Limousine Experience
             </h2>
 
-            <div className="w-100 bg-secondary p-4 hero1 position-relative">
+            <div className="w-100 bg-primary p-4 hero1">
               <Row>
                 <Col sm={12} md={6} lg={6}>
-                  <div className=" w-100 ">
-                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0">
+                  <div className=" w-100 text-white mt-5">
+                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0 hero-text2">
                       Luxurious Fleet
                     </h2>
                     <p className="fs-5 px-lg-5">
@@ -51,7 +51,7 @@ function Herosection() {
                     <img
                       src="/public/img/Hero-limo-interior.jpg"
                       alt=""
-                      className="w-100 hero1-image "
+                      className="w-100 hero1-image mt-5"
                     />
                   </div>
                 </Col>
@@ -62,13 +62,13 @@ function Herosection() {
                     <img
                       src="/public/img/first-container-image 1.png"
                       alt=""
-                      className="w-100 hero1-image mt-sm-4"
+                      className="w-100 hero1-image mt-5"
                     />
                   </div>
                 </Col>
                 <Col sm={12} md={6} lg={6}>
-                  <div className=" w-100 ">
-                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0">
+                  <div className=" w-100 text-white mt-5">
+                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0 hero-text2">
                       Professional Chauffeurs
                     </h2>
                     <p className="fs-5 px-lg-5">
@@ -83,8 +83,8 @@ function Herosection() {
               </Row>
               <Row>
                 <Col sm={12} md={6} lg={6}>
-                  <div className=" w-100 ">
-                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0">
+                  <div className=" w-100 text-white mt-5">
+                    <h2 className="text-center pt-lg-5 mt-lg-5 pt-sm-4 pt-md-0 mt-md-0 hero-text2">
                       Tailored Experience
                     </h2>
                     <p className="fs-5 px-lg-5">
@@ -100,7 +100,7 @@ function Herosection() {
                     <img
                       src="/public/img/hero-wedding.jpg"
                       alt=""
-                      className="w-100 hero1-image mt-sm-4 "
+                      className="w-100 hero1-image mt-5 "
                     />
                   </div>
                 </Col>

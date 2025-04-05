@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Buttons from "../button/Buttons";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
@@ -16,20 +16,13 @@ function Services1() {
           <h2 className="px-3">
             Luxury Limousine <br /> Service in Your City
           </h2>
-          <p className="btn-bg fs-5 d-inline">
-            <Link
-              to="/contact"
-              className="text-decoration-none text-white text-center"
-            >
-              Contact Us
-            </Link>
-          </p>
+          <Buttons text="Contact Us" linkTo="/contact" btnStyle="btn-bg" />
         </div>
 
         <div className="my-4">
           <Row>
             <Col sm={12} md={12} lg={6}>
-              <div className="w-100 p-5 bg-light hero1-image">
+              <div className="w-100 p-5 bg-light hero1-image mb-3">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
                   size="3x"
@@ -40,34 +33,31 @@ function Services1() {
                   services, perfect for special events or turning an ordinary
                   day into something extraordinary.
                 </p>
-                <p className="bg-secondary py-2 px-4 d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4 d-inline-block rounded-pill">
                   Proffesional Chauffers
                 </p>{" "}
-                <p className="bg-secondary py-2 px-4  d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4  d-inline-block rounded-pill">
                   Premium Vehicles
                 </p>{" "}
-                <p className="bg-secondary py-2 px-4  d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4  d-inline-block rounded-pill">
                   On-Time, Every-Time
                 </p>{" "}
-                <p className="bg-secondary py-2 px-4  d-inline-block rounded-pill">
+                <p className="bg-primary text-white py-2 px-4  d-inline-block rounded-pill">
                   Seamless Experience
                 </p>{" "}
                 <br />
                 <div className="mt-3">
-                  <p className="bg-gold d-inline fs-5 py-2 px-3 rounded-pill">
-                    <Link className="text-decoration-none text-white text-center">
-                      Book A Ride Today
-                    </Link>
-                  </p>
+                  <Buttons text="Our Fleet" linkTo="/about" btnStyle="btn-bg" />
                 </div>
               </div>
             </Col>
-            <Col sm={12} md={12}  lg={6}>
+            <Col sm={12} md={12} lg={6}>
               <div className="w-100">
                 <img
                   src="/public/img/limo-service.jpg"
                   alt=""
                   className="w-100 hero1-image"
+                  title="A White Limousine in The City"
                 />
               </div>
             </Col>
