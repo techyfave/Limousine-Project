@@ -1,5 +1,11 @@
 [[redirects]]
-from="http://*"
-to="https://:host/:splat"
-status=301
-force=true
+  from = "http://princeexecutivetransport.com/*"
+  to = "https://www.princeexecutivetransport.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://princeexecutivetransport.com/*"
+  to = "https://www.princeexecutivetransport.com/:splat"
+  status = 301
+  force = true
