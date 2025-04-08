@@ -13,12 +13,12 @@ import { getAnalytics } from "firebase/analytics";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: fireapi,
-  authDomain: "ghostthebarber-d1bec.firebaseapp.com",
-  projectId: "ghostthebarber-d1bec",
-  storageBucket: "ghostthebarber-d1bec.firebasestorage.app",
-  messagingSenderId: "632588920522",
-  appId: "1:632588920522:web:739158adf04539c2357633",
-  measurementId: "G-H9BMVP2TQP"
+  authDomain: "prince-executive.firebaseapp.com",
+  projectId: "prince-executive",
+  storageBucket: "prince-executive.firebasestorage.app",
+  messagingSenderId: "544429189860",
+  appId: "1:544429189860:web:0383140a6edbf8c0c89af1",
+  measurementId: "G-ZWWTDX1S9F"
 };
 
 // Prevent multiple initializations

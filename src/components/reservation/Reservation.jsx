@@ -37,7 +37,7 @@ function Reservation() {
 
     // CAPTCHA validation
     if (formData.captcha !== "12") {
-      alert("Incorrect CAPTCHA answer.");
+      setModal({ show: true, message: "incorrect captcha answer, try again.", type: "error" });
       return;
     }
 
@@ -305,9 +305,9 @@ function Reservation() {
               required
             />
 
-           <button type="submit">Submit Reservation</button>
+           
             <div className="d-grid gap-2">
-              <button className=" btn btn-primary" type="button">
+              <button className=" btn btn-primary" type="submit">
                 Submit
               </button>
             </div>

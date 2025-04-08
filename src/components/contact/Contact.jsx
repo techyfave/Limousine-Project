@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./contact.css";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,9 +8,87 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { db } from "../../firebase/firebase";
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import emailjs from "emailjs-com"
+
 function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    confirmEmail: "",
+    message: "",
+    captcha: ""
+  });
+
+
+  const [modal, setModal] = useState({ show: false, message: "", type: "" });
+  
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    if (formData.email !== formData.confirmEmail) {
+      setModal({ show: true, message: "Emails do not match..", type: "error" });
+      return;
+    }
+
+    if (formData.captcha !== "12") {
+      setModal({ show: true, message: "incorrect captcha answer, try again.", type: "error" });
+      return;
+    }
+  
+    try {
+      // 1. Save to Firestore
+      await addDoc(collection(db, "contacts"), {
+        ...formData,
+        createdAt: new Date()
+      });
+  
+      // 2. Send via EmailJS
+      await emailjs.send(
+        "service_i5kcoks",
+        "template_zu2nc28",
+        {
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "HxBTk1Vgbi3xy8FjD"
+      );
+  
+      setModal({ show: true, message: "Messsage sent successfully!", type: "success" });
+      console.log("Modal state updated:", modal);
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        confirmEmail: "",
+        message: "",
+        captcha: ""
+      });
+    } catch (error) {
+      console.error("Submission error:", error);
+      setModal({ show: true, message: "Failed to submit your message. Please try again.", type: "error" });
+    }
+  };
+
   return (
     <div className="hero1">
+      {modal.show && (
+        <div className="modal-overlay">
+        <div className={`reserve-modal ${modal.type}`}>
+          <p>{modal.message}</p>
+          <button onClick={() => setModal({ show: false, message: "", type: "" })} className="bg-primary">Close</button>
+        </div>
+        </div>
+      )}
       <main className=" bg-light px-4 contact-main ">
         <Row>
           <Col sm={12} md={6}>
@@ -83,7 +161,7 @@ function Contact() {
                   destinedadjuster@gmail.com
                 </a>
               </p>
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <div>
                   <p className="fw-bold">
                     Name{" "}
@@ -102,6 +180,10 @@ function Contact() {
                         className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-lg"
+                        required
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleChange}
                       />
                     </Col>
                     <Col sm={12} md={6} lg={6}>
@@ -114,6 +196,11 @@ function Contact() {
                         className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-lg"
+
+                        required
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleChange}
                       />
                     </Col>
                   </Row>
@@ -133,10 +220,14 @@ function Contact() {
                       </label>
                       <br />
                       <input
-                        type="text"
+                        type="email"
                         className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-lg"
+                        required
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </Col>
                     <Col sm={12} md={6} lg={6}>
@@ -145,10 +236,14 @@ function Contact() {
                       </label>
                       <br />
                       <input
-                        type="text"
+                        type="email"
                         className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-lg"
+                        required
+                        name="confirmEmail"
+                        value={formData.confirmEmail}
+                        onChange={handleChange}
                       />
                     </Col>
                   </Row>
@@ -172,6 +267,10 @@ function Contact() {
                     placeholder="Leave a comment here"
                     id="floatingTextarea"
                     rows={8}
+                    required
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                   <span>0 of 600 max characters</span>
 
@@ -187,10 +286,14 @@ function Contact() {
                     className="form-control mb-3"
                     aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-lg"
+                    required
+                    name="captcha"
+                    value={formData.captcha}
+                    onChange={handleChange}
                   />
 
                   <div className="d-grid gap-2">
-                    <button className="btn btn-primary" type="button">
+                    <button className="btn btn-primary" type="submit">
                       Submit
                     </button>
                   </div>
