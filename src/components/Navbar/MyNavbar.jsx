@@ -15,7 +15,7 @@ const MyNavbar = () => {
         <div>
           <Navbar.Brand href="/">
             <img
-              src="/public/img/tranparent.png"
+              src="/img/tranparent.png"
               alt="Prince Executive Transport Logo"
               height={80}
               className="navbar-brand"
