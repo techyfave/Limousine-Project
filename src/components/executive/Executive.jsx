@@ -57,7 +57,7 @@ function Executive() {
             <div>
               <div className="w-100 mt-5">
                 <img
-                  src="/public/img/executive-transportation.jpg "
+                  src="/Img/executive-transportation.jpg "
                   alt=""
                   className="w-100 rounded"
                 />

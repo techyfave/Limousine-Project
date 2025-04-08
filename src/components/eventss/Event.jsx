@@ -45,7 +45,7 @@ function Event() {
             <div className="mt-5">
               <div className="image-event">
                 <img
-                  src="/public/img/Event-image.jpg"
+                  src="/Img/Event-image.jpg"
                   alt="Event Transportation Image"
                   className="w-100 rounded"
                 />

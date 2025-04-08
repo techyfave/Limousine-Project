@@ -12,7 +12,7 @@ function About2() {
             {" "}
             <div>
               <img
-                src="/public/img/limo-plane.jpg"
+                src="/Img/limo-plane.jpg"
                 alt=""
                 className="w-100 hero1-image"
               />

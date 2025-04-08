@@ -49,7 +49,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/img/Hero-limo-interior.jpg"
+                      src="/Img/Hero-limo-interior.jpg"
                       alt=""
                       className="w-100 hero1-image mt-5"
                     />
@@ -60,7 +60,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/img/first-container-image 1.png"
+                      src="/Img/first-container-image 1.png"
                       alt=""
                       className="w-100 hero1-image mt-5"
                     />
@@ -98,7 +98,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/img/hero-wedding.jpg"
+                      src="/Img/hero-wedding.jpg"
                       alt=""
                       className="w-100 hero1-image mt-5 "
                     />

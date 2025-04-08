@@ -15,7 +15,7 @@ function Navbar() {
         <div className="container-fluid">
           <Link className="navbar-brand text-white" to="/">
             <img
-              src="/img/tranparent.png"
+              src="/Img/tranparent.png"
               alt="executive logo"
               height={80}
               className="navbar-brand"

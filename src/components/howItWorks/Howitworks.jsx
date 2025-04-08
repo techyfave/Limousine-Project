@@ -40,7 +40,7 @@ function Howitworks() {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div className="w-100 border-rounded">
-              <img src="/public/img/man.jpg" alt="" className="w-100 rounded" />
+              <img src="/Img/man.jpg" alt="" className="w-100 rounded" />
               <h3 className="text-center pt-4">Schedule Your Journey Today</h3>
               <div className="d-flex justify-content-center align-items-center pt-4">
                 <Buttons

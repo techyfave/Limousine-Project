@@ -67,7 +67,7 @@ export default function Faqspage() {
           <Col>
             <div className="w-100">
               <img
-                src="public/Img/escaladecar.png"
+                src="/Img/escaladecar.png"
                 alt="escalade car"
                 className="w-100"
               />

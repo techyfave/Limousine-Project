@@ -53,7 +53,7 @@ function Legal() {
             <div>
               <div className="w-100 mt-5">
                 <img
-                  src="/public/img/legal-transporatation.jpg"
+                  src="/Img/legal-transporatation.jpg"
                   alt=""
                   className="w-100 rounded"
                 />

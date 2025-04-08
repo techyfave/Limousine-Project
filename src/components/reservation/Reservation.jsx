@@ -54,10 +54,10 @@ function Reservation() {
 
       // Send email via EmailJS
       await emailjs.send(
-        "service_h98w2c8",
-        "template_ntr2i0o",
+        "service_i5kcoks",
+        "template_qnabg2p",
         reservationData,
-        "V_ZWZy0yVNuywPrwJ"
+        "HxBTk1Vgbi3xy8FjD"
       );
 
       setModal({ show: true, message: "Reservation submitted successfully!", type: "success" });

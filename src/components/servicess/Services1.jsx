@@ -54,7 +54,7 @@ function Services1() {
             <Col sm={12} md={12} lg={6}>
               <div className="w-100">
                 <img
-                  src="/public/img/limo-service.jpg"
+                  src="/Img/limo-service.jpg"
                   alt=""
                   className="w-100 hero1-image"
                   title="A White Limousine in The City"

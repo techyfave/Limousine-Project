@@ -52,7 +52,7 @@ function Corporate() {
               <div className="mt-5">
                 <div className="w-100">
                   <img
-                    src="/public/img/corporate.jpg"
+                    src="/Img/corporate.jpg"
                     alt=""
                     className="w-100 rounded"
                   />
