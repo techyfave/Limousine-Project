@@ -7,7 +7,7 @@
 }
 
 .hero-section{
-    background-image: url("/public/Img/CAR\ IMAGE\ 1.jpg");
+    background-image: url("../../../public/Img/carimage1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
