@@ -142,11 +142,9 @@ function Contact() {
                 <FontAwesomeIcon icon={faLocationDot} /> &nbsp; Office Location
               </h4>
               <div className="px-5 fs-5">
-                <span >Visit Us at Our Office</span>
+                <span>Visit Us at Our Office</span>
                 <br />
-                <span>
-                  9626, S. Kirkwood Road, Suite B
-                </span>
+                <span>9626, S. Kirkwood Road, Suite B</span>
                 <p>Houston, Texas. 77099</p>
               </div>
 
@@ -170,7 +168,7 @@ function Contact() {
 
           {/* Form area  */}
           <Col sm={12} md={6}>
-            <div className="bg-light p-4 form">
+            <div className="bg-secondary p-4 form">
               <h4>Elevate your Journey</h4>
               <p className="fs-5">
                 You can reach out to us anytime at{" "}
@@ -191,9 +189,7 @@ function Contact() {
                   </p>
                   <Row>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="firstname">
-                        First
-                      </label>
+                      <label htmlFor="firstname">First</label>
                       <br />
                       <input
                         type="text"
@@ -207,9 +203,7 @@ function Contact() {
                       />
                     </Col>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="lastname">
-                        Last
-                      </label>
+                      <label htmlFor="lastname">Last</label>
                       <br />
                       <input
                         type="text"
@@ -234,9 +228,7 @@ function Contact() {
                   </p>
                   <Row>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="email">
-                        Enter Email
-                      </label>
+                      <label htmlFor="email">Enter Email</label>
                       <br />
                       <input
                         type="email"
@@ -250,9 +242,7 @@ function Contact() {
                       />
                     </Col>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="confirm-email">
-                        Confirm Email
-                      </label>
+                      <label htmlFor="confirm-email">Confirm Email</label>
                       <br />
                       <input
                         type="email"

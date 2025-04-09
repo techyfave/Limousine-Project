@@ -6,12 +6,12 @@ function Executive2() {
   return (
     <div className="px-4 executive-2-container bg-light pb-4">
       <h2 className="text-center">Effortless Travel, Enhanced Efficiency</h2>
-      <p className="text-center py-3 px-5 fs-5">
-        Bid farewell to the stress of commuting and welcome the convenience of
-        corporate transportation services tailored to your needs. Whether you’re
-        heading to a legal hearing, business meeting, or conference, we offer
-        more than just a ride—our service acts as an extension of your
-        workspace.
+      <p className="text-center py-3 px-5 px-sm-0 fs-5">
+        "Elevate your travel experience with our executive transportation
+        services, designed for professionals who demand excellence. Whether
+        you're on your way to a high-profile meeting, networking event, or
+        exclusive dinner, we provide more than transportation—we deliver an
+        experience that reflects your status and sets the tone for success."
       </p>
 
       <div className="executive-2-items mb-4">
