@@ -11,7 +11,7 @@ function Herosection2() {
           <span className="text-white fs-5">/</span> Effortless Travel Solutions
         </p>
 
-        <div className=" mt-5 text-white">
+        <div className=" mt-4 text-white">
           <Row>
             <Col sm={12} md={6}>
               <div className="w-100 mt-5">
@@ -19,7 +19,7 @@ function Herosection2() {
                   Streamlined Travel for Business Travelers
                 </h2>
                 <div className="text-black fs-5 bg-secondary p-4 hero1">
-                <p className="fs-5 bg-primary p-4 hero1">
+                <p className="fs-5 p-3 hero1">
                   {" "}
                   &nbsp; Traveling for business can be stressful and
                   unpredictable. With Prince Executive Transport LLC, you can
@@ -53,7 +53,7 @@ function Herosection2() {
                   Stay Connected While You Travel
                 </h2>
                 <div className="fs-5 bg-primary p-4 hero1">
-                  <p>
+                  <p className="fs-5 p-3 hero1">
                   {" "}
 
                   &nbsp; Our fleet of luxury SUVs and sedans comes equipped with
@@ -88,7 +88,7 @@ function Herosection2() {
               When you travel with Prince Executive Transport, you never travel
               alone.
             </h2>
-            <p className="text-center fs-6 px-5 py-3hero1 mx-5">
+            <p className="text-center fs-6 px-4 py-3 hero1 ">
               We guarantee that you will be satisfied with our professional and
               reliable transportation services. Your journey begins with us,
               ensuring comfort, safety, and efficiency every step of the way.

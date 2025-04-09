@@ -32,9 +32,7 @@ function Navbar() {
               aria-controls="navbarNav"
               aria-expanded={isOpen}
               aria-label="Toggle navigation"
-              >
-
-            </span>
+            ></span>
           </button>
 
           <div
@@ -65,12 +63,12 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <span className="nav-link text-white">
-                  LIVE AGENTS AVAILABLE 24/7
-                </span>
+                <span className="text-white">LIVE AGENTS AVAILABLE 24/7</span>
               </li>
               <li className="nav-item">
-                <Link to={"tel:+1610-938-1411"} className="nav-link text-white">+1 610-938-1411</Link>
+                <Link to={"tel:+1610-938-1411"} className="nav-link text-white">
+                  +1 610-938-1411
+                </Link>
               </li>
             </ul>
           </div>
