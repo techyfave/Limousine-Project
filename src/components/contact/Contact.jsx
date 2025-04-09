@@ -130,10 +130,10 @@ function Contact() {
                 <p>
                   Email:{" "}
                   <a
-                    href="mailto:estinedadjuster@gmail.com"
+                    href="mailto:agunloyeprince4@gmail.com"
                     className="text-primary"
                   >
-                    destinedadjuster@gmail.com
+                    agunloyeprince4@gmail.com
                   </a>
                 </p>
               </div>
@@ -173,10 +173,10 @@ function Contact() {
               <p className="fs-5">
                 You can reach out to us anytime at{" "}
                 <a
-                  href="mailto:estinedadjuster@gmail.com"
+                  href="mailto:agunloyeprince4@gmail.com"
                   className="text-primary"
                 >
-                  destinedadjuster@gmail.com
+                  agunloyeprince4@gmail.com
                 </a>
               </p>
               <form onSubmit={handleSubmit}>

@@ -12,10 +12,13 @@ function Privacy() {
           Privacy applies to the Prince Executive Transport applications and
           governs data collection and usage. For the purposes of this Privacy
           Policy, unless otherwise noted, all references to Prince Executive
-          Transport include <Link>destinedadjuster@gmail.com</Link> and any
-          Prince Executive Transport owned applications. The Prince Executive
-          Transport application is a web based application and the Driver
-          application is available on mobile devices. By using the Prince
+          Transport include{" "}
+          <Link to="mailto:agunloyeprince4@gmail.com">
+            agunloyeprince4@gmail.com
+          </Link>{" "}
+          and any Prince Executive Transport owned applications. The Prince
+          Executive Transport application is a web based application and the
+          Driver application is available on mobile devices. By using the Prince
           Executive Transport applications, you consent to the data practices
           described in this statement.
         </p>
@@ -191,7 +194,8 @@ function Privacy() {
         <p className="fs-5 my-4">9626, S. Kirkwood Road, Suite B</p>
         <p className="fs-5 my-4">Houston Texas 77099</p>
         <p className="fs-5 my-4">
-          Email Address: <a href="">destinedadjuster@gmail.com</a>
+          Email Address:{" "}
+          <Link to="agunloyeprince4@gmail.com">agunloyeprince4@gmail.com</Link>
         </p>
         <p className="fs-5 my-4">
           Telephone Number: <a href="">+1 610-938-1411</a>

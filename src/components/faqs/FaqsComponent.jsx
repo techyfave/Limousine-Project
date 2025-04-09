@@ -14,7 +14,7 @@ export default function Faqspage() {
           Questions
         </p>
         <Row>
-          <Col>
+          <Col sm={12} md={6} lg={6}>
             <div className="">
               <div className="">
                 <h3 className="border-bottom border-top border-primary py-2 d-inline-block bor">
@@ -64,7 +64,7 @@ export default function Faqspage() {
             </div>
           </Col>
 
-          <Col>
+          <Col sm={12} md={6} lg={6}>
             <div className="w-100">
               <img
                 src="/Img/escaladecar.png"
