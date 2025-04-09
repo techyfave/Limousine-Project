@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./howitworks.css";
 import Buttons from "../button/Buttons";
-import Nextstep from "../corporate/Nextstep";
 
 function Howitworks() {
   return (
@@ -66,7 +65,7 @@ function Howitworks() {
           </div>
         </div> */}
 
-        <div className="bg-primary mx-4 my-5 py-5 px-4 rounded">
+        <div className="bg-primary my-5 py-5 px-4 rounded">
           <h2 className="fs-3 text-center text-white">
             Questions? We Have Answers.
           </h2>

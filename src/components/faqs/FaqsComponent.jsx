@@ -8,7 +8,7 @@ import Nextstep from "../corporate/Nextstep";
 export default function Faqspage() {
   return (
     <>
-      <div className="w-100 px-5 pt-5 mt-3">
+      <div className="w-100 px-4 pt-5 mt-3">
         <p className="fs-4 text-gold pb-3">
           <span className="text-primary fs-4">/</span> Frequently Asked
           Questions
