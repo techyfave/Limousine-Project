@@ -43,27 +43,29 @@ function Navbar() {
           >
             <ul className="navbar-nav fs-5">
               <li className="nav-item">
-                <Link to="/about" className="nav-link text-white">
+                <Link to="/about" className="nav-link text-white link">
                   ABOUT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/services" className="nav-link text-white">
+                <Link to="/services" className="nav-link text-white link">
                   SERVICES
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link text-white">
+                <Link to="/contact" className="nav-link text-white link">
                   CONTACT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/reservation" className="nav-link text-white">
+                <Link to="/reservation" className="nav-link text-white link">
                   RESERVATION
                 </Link>
               </li>
               <li className="nav-item">
-                <span className="text-white">LIVE AGENTS AVAILABLE 24/7</span>
+                <span className="text-white nav-link">
+                  LIVE AGENTS AVAILABLE 24/7
+                </span>
               </li>
               <li className="nav-item">
                 <Link to={"tel:+1610-938-1411"} className="nav-link text-white">

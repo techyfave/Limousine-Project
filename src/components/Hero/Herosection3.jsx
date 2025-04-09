@@ -11,7 +11,8 @@ function Herosection3() {
             <div className="hero3-box1 w-100 d-flex justify-content-center align-items-center">
               <h2 className="py-4 px-2">
                 Providing Door to Door <br /> Transportation Services <br />
-                Worldwide <br /> Prince Executive Transport LLC
+                Worldwide <span className="fst-italic">with</span>
+                <br /> Prince Executive Transport LLC
               </h2>
             </div>
           </Col>

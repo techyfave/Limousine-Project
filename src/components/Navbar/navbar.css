@@ -42,7 +42,7 @@
     z-index: 1030;
   }
 
-  .nav-link:hover{
+  .link:hover{
     border-bottom: 2px solid #aaaaaa;
     color: #aaaaaa !important;
 }
