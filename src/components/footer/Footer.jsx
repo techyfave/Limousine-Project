@@ -11,7 +11,7 @@ function Footer() {
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box pt-5">
             <Link to="/">
-              <img src="/public/img/tranparent.png" alt="" height={80} />
+              <img src="/Img/tranparent.png" alt="" height={80} />
             </Link>
           </div>
         </Col>
