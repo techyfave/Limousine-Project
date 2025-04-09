@@ -65,11 +65,9 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <p className="nav-link text-white ">
                 <span className="nav-link text-white">
                   LIVE AGENTS AVAILABLE 24/7
                 </span>
-                </p>
               </li>
               <li className="nav-item">
                 <Link to={"tel:+1610-938-1411"} className="nav-link text-white">+1 610-938-1411</Link>
