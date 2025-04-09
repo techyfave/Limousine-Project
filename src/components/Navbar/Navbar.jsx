@@ -26,7 +26,6 @@ function Navbar() {
             type="button"
             onClick={toggleNavbar}
           >
-            <span className="navbar-toggler-icon"></span>
             <span
               className="navbar-toggler-icon"
               aria-controls="navbarNav"
