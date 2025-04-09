@@ -9,6 +9,10 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="fixed-top">
       <nav className="navbar navbar-expand-lg bg-primary">
@@ -42,22 +46,38 @@ function Navbar() {
           >
             <ul className="navbar-nav fs-5">
               <li className="nav-item">
-                <Link to="/about" className="nav-link text-white link">
+                <Link
+                  to="/about"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   ABOUT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/services" className="nav-link text-white link">
+                <Link
+                  to="/services"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   SERVICES
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link text-white link">
+                <Link
+                  to="/contact"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   CONTACT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/reservation" className="nav-link text-white link">
+                <Link
+                  to="/reservation"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   RESERVATION
                 </Link>
               </li>
@@ -67,7 +87,11 @@ function Navbar() {
                 </span>
               </li>
               <li className="nav-item">
-                <Link to={"tel:+1610-938-1411"} className="nav-link text-white">
+                <Link
+                  to={"tel:+1610-938-1411"}
+                  className="nav-link text-white"
+                  onClick={closeNavbar}
+                >
                   +1 610-938-1411
                 </Link>
               </li>
