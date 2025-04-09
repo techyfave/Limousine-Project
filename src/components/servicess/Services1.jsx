@@ -22,7 +22,7 @@ function Services1() {
         <div className="my-4">
           <Row>
             <Col sm={12} md={12} lg={6}>
-              <div className="w-100 p-3 bg-light hero1-image mb-3">
+              <div className="w-100 p-4 bg-light hero1-image mb-3">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
                   size="3x"
