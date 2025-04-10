@@ -16,7 +16,8 @@ function Herosection() {
             </h1>
             <p className="pt-3 fs-4">
               <Link to="/reservation" className="text-white hero-link">
-                Book Suburban/Limousine <FontAwesomeIcon icon={faArrowRight} />
+                Book Your &nbsp;Suburban/Limousine{" "}
+                <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </p>
           </div>
@@ -48,7 +49,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/Img/Hero-limo-interior\.jpg"
+                      src="/Img/Hero-limo-interior.jpg"
                       alt=""
                       className="w-100 hero1-image mt-5"
                     />
