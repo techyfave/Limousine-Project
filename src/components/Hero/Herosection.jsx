@@ -16,8 +16,7 @@ function Herosection() {
             </h1>
             <p className="pt-3 fs-4">
               <Link to="/reservation" className="text-white hero-link">
-                Book Your Limousine Today{" "}
-                <FontAwesomeIcon icon={faArrowRight} />
+                Book Suburban/Limousine <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </p>
           </div>
@@ -49,7 +48,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/Img/Hero-limo-interior.jpg"
+                      src="/Img/Hero-limo-interior\.jpg"
                       alt=""
                       className="w-100 hero1-image mt-5"
                     />
@@ -60,7 +59,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/Img/first-container-image 1.png"
+                      src="/Img/black suburban.jpg"
                       alt=""
                       className="w-100 hero1-image mt-5"
                     />

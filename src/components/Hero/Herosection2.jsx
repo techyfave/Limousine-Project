@@ -18,18 +18,18 @@ function Herosection2() {
                 <h2 className="text-white text-center fs-3 pb-3">
                   Streamlined Travel for Business Travelers
                 </h2>
-                <div className="text-black fs-5 bg-secondary py-4 px-3 hero1">
-                <p className="fs-5 p-3 hero1">
-                  {" "}
-                  &nbsp; Traveling for business can be stressful and
-                  unpredictable. With Prince Executive Transport LLC, you can
-                  leave the worries behind. Our airport pickup and drop-off
-                  services are meticulously planned to ensure a smooth
-                  experience. Our vehicles are equipped with advanced tracking
-                  technology, providing you with real-time updates and peace of
-                  mind.
+                <div className="text-black fs-5 bg-primary py-4 px-3 hero1">
+                  <p className="fs-5 p-3 hero1">
+                    {" "}
+                    &nbsp; Traveling for business can be stressful and
+                    unpredictable. With Prince Executive Transport LLC, you can
+                    leave the worries behind. Our airport pickup and drop-off
+                    services are meticulously planned to ensure a smooth
+                    experience. Our vehicles are equipped with advanced tracking
+                    technology, providing you with real-time updates and peace
+                    of mind.
                   </p>
-                  <ul className="fs-5 pt-4">
+                  <ul className="fs-5 pt-3">
                     <li>
                       24/7 Professional Support: Our dedicated Dispatch Agents
                       are available around the clock to assist you with your
@@ -54,13 +54,12 @@ function Herosection2() {
                 </h2>
                 <div className="fs-5 bg-primary py-4 px-3 hero1">
                   <p className="fs-5 p-3 hero1">
-                  {" "}
-
-                  &nbsp; Our fleet of luxury SUVs and sedans comes equipped with
-                  high-speed broadband Wi-Fi, allowing you to stay connected and
-                  productive during your journey. Whether you're managing work,
-                  making calls, or relaxing before your next meeting, we provide
-                  a “Mobile Office Environment.”
+                    {" "}
+                    &nbsp; Our fleet of luxury SUVs and sedans comes equipped
+                    with high-speed broadband Wi-Fi, allowing you to stay
+                    connected and productive during your journey. Whether you're
+                    managing work, making calls, or relaxing before your next
+                    meeting, we provide a “Mobile Office Environment.”
                   </p>
                   <ul className="fs-5 pt-5">
                     <li>

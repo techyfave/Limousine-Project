@@ -195,7 +195,7 @@ function Privacy() {
         <p className="fs-5 my-4">Houston Texas 77099</p>
         <p className="fs-5 my-4">
           Email Address:{" "}
-          <Link to="agunloyeprince4@gmail.com">agunloyeprince4@gmail.com</Link>
+          <Link to="mailto:agunloyeprince4@gmail.com">agunloyeprince4@gmail.com</Link>
         </p>
         <p className="fs-5 my-4">
           Telephone Number: <a href="">+1 610-938-1411</a>
