@@ -18,7 +18,7 @@ function Herosection3() {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div className="hero-section3-box2 w-100">
-              <img src="/Img/hero3.png " alt="" width="100%" />
+              <img src="/Img/prince suburban back 1.jpg" alt="" width="100%" />
             </div>
           </Col>
         </Row>

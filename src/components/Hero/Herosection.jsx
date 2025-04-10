@@ -49,7 +49,7 @@ function Herosection() {
                 <Col sm={12} md={6} lg={6}>
                   <div className="w-100">
                     <img
-                      src="/Img/prine suburban front 1.jpg"
+                      src="/Img/prince 1.jpg"
                       alt=""
                       className="w-100 hero1-image mt-5"
                     />
