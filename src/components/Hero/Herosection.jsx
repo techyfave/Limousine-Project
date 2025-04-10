@@ -16,7 +16,7 @@ function Herosection() {
             </h1>
             <p className="pt-3 fs-4">
               <Link to="/reservation" className="text-white hero-link">
-                Book &nbsp; Your &nbsp;Suburban/Limousine{" "}
+                Book Your Suburban/Limousine{" "}
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </p>

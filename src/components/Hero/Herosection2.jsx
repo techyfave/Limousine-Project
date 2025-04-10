@@ -18,7 +18,7 @@ function Herosection2() {
                 <h2 className="text-white text-center fs-3 pb-3">
                   Streamlined Travel for Business Travelers
                 </h2>
-                <div className="text-black fs-5 bg-primary py-4 px-3 hero1">
+                <div className="text-white fs-5 bg-primary py-4 px-3 hero1">
                   <p className="fs-5 p-3 hero1">
                     {" "}
                     &nbsp; Traveling for business can be stressful and
