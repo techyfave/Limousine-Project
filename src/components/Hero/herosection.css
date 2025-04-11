@@ -13,7 +13,7 @@
     background-attachment: fixed;
     background-position: center;
 
-    animation: change_image 20s ease-in-out 0s infinite ;
+    animation: change_image 60s ease-in-out 0s infinite ;
 
     @media screen and (max-width: 768px) {
        background-position: center; 
@@ -32,7 +32,7 @@
         background-image: url("/Img/Prince\ interiror\ 1.jpg");
     }
     60%{
-        background-image: url("/Img/prine\ cahuffer\ 2.mp4");
+        background-image: url("/Img/prince\ chaffeur.jpg");
     }
     80%{
         background-image: url("/Img/prine\ interior\ 2.jpg");
