@@ -10,8 +10,12 @@ function About2() {
         <Row>
           <Col sm={12} md={6} lg={6}>
             {" "}
-            <div>
-              <img src="/Img/prine interior 2 edidted.jpg" alt="" />
+            <div className="w-100">
+              <img
+                src="/Img/prine interior 2 edidted.jpg"
+                alt=""
+                className="w-100 hero1-image"
+              />
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>

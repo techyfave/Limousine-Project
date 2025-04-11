@@ -69,7 +69,7 @@ function About() {
           <Col sm={12} md={6} lg={6}>
             <div className="image-parent border-rounded">
               <img
-                src="/Img/black suburban.jpg"
+                src="/Img/prince 3 edited.jpg"
                 alt=""
                 className="w-100 hero1-image"
               />

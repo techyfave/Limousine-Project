@@ -13,7 +13,7 @@
     background-attachment: fixed;
     background-position: center;
 
-    animation: change_image 60s ease-in-out 0s infinite ;
+    animation: change_image 50s ease-in-out 0s infinite ;
 
     @media screen and (max-width: 768px) {
        background-position: center; 
