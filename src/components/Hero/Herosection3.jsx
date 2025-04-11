@@ -19,7 +19,7 @@ function Herosection3() {
           <Col sm={12} md={6} lg={6}>
             <div className="hero-section3-box2 w-100">
               <img
-                src="/Img/prince suburban back 1.jpg"
+                src="/Img/first-container-image 1.png"
                 alt=""
                 width="100%"
                 className="hero1-image"

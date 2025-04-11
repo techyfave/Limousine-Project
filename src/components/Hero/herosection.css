@@ -7,14 +7,38 @@
 }
 
 .hero-section{
-    background-image: url("/Img/prine\ suburban\ front\ 1.jpg");
+    background-image: url("/Img/prince 3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 
+    animation: change_image 10s linear 0s infinite alternate;
+
     @media screen and (max-width: 768px) {
        background-position: center; 
+    }
+
+}
+
+@keyframes change_image {
+    0%{
+        background-image: url("/Img/prince 3.jpg");
+    }
+    20%{
+        background-image: url("/Img/prince\ 1.jpg");
+    }
+    40%{
+        background-image: url("/Img/Prince\ interiror\ 1.jpg");
+    }
+    60%{
+        background-image: url("/Img/prine\ cahuffer\ 2.mp4");
+    }
+    80%{
+        background-image: url("/Img/prine\ interior\ 2.jpg");
+    }
+    100%{
+        background-image: url("/Img/prince\ suburban\ back\ 1.jpg");
     }
 }
 

@@ -11,11 +11,9 @@ function About2() {
           <Col sm={12} md={6} lg={6}>
             {" "}
             <div>
-              <img
-                src="/Img/limo-plane.jpg"
-                alt=""
-                className="w-100 hero1-image"
-              />
+              <video className="w-100" autoPlay>
+                <source src="/Img/prine cahuffer 2.mp4" type="video/mp4" />
+              </video>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
