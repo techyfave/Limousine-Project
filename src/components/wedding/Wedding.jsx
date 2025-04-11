@@ -54,7 +54,7 @@ function Wedding() {
             <div className="w-100">
               <div className="w-100">
                 <img
-                  src="/public/img/wedding-transportation.jpg"
+                  src="/Img/wedding-transportation.jpg"
                   alt=""
                   className="w-100 rounded"
                 />

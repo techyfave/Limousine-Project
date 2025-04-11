@@ -22,7 +22,7 @@ function Services1() {
         <div className="my-4">
           <Row>
             <Col sm={12} md={12} lg={6}>
-              <div className="w-100 p-5 bg-light hero1-image mb-3">
+              <div className="w-100 p-4 bg-light hero1-image mb-3">
                 <FontAwesomeIcon
                   icon={faQuoteRight}
                   size="3x"
@@ -52,9 +52,9 @@ function Services1() {
               </div>
             </Col>
             <Col sm={12} md={12} lg={6}>
-              <div className="w-100">
+              <div className="w-100 mx-0">
                 <img
-                  src="/Img/limo-service.jpg"
+                  src="/Img/prince 1.jpg"
                   alt=""
                   className="w-100 hero1-image"
                   title="A White Limousine in The City"

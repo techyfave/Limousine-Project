@@ -8,7 +8,7 @@ function Corporate2() {
         <span className="text-info fs-4">/</span> Travel Smart
       </p>
       <h2 className="text-center">Effortless Travel, Enhanced Efficiency</h2>
-      <p className="text-center pt-3 pb-5 px-5 fs-5">
+      <p className="text-center pt-3 pb-5 px-5 px-sm-0 fs-5">
         Bid farewell to the stress of commuting and welcome the convenience of
         corporate transportation services tailored to your needs. Whether you’re
         heading to a legal hearing, business meeting, or conference, we offer

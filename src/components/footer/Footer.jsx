@@ -11,7 +11,7 @@ function Footer() {
         <Col sm={12} md={12} lg={4}>
           <div className="footer-box pt-5">
             <Link to="/">
-              <img src="/public/img/tranparent.png" alt="" height={80} />
+              <img src="/Img/tranparent.png" alt="" height={80} />
             </Link>
           </div>
         </Col>
@@ -34,10 +34,10 @@ function Footer() {
                 <li>
                   {" "}
                   <a
-                    href="mailto:destinedadjuster@gmail.com"
+                    href="mailto:princeexecutivetransport@gmail.com"
                     className="middle-box text-decoration"
                   >
-                    destinedadjuster@gmail.com
+                    princeexecutivetransport@gmail.com
                   </a>
                 </li>
                 <li>

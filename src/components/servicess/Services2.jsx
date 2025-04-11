@@ -18,7 +18,7 @@ function Services2() {
   return (
     <div>
       <main>
-        <div className="mx-5">
+        <div className="mx-4">
           <p className="fs-4 text-gold pt-5">
             {" "}
             <span className="text-info fs-4">/</span> At Your Service

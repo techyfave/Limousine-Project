@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +11,7 @@ import {
 import { db } from "../../firebase/firebase";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,36 +20,39 @@ function Contact() {
     email: "",
     confirmEmail: "",
     message: "",
-    captcha: ""
+    captcha: "",
   });
 
-
   const [modal, setModal] = useState({ show: false, message: "", type: "" });
-  
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (formData.email !== formData.confirmEmail) {
       setModal({ show: true, message: "Emails do not match..", type: "error" });
       return;
     }
 
     if (formData.captcha !== "12") {
-      setModal({ show: true, message: "incorrect captcha answer, try again.", type: "error" });
+      setModal({
+        show: true,
+        message: "incorrect captcha answer, try again.",
+        type: "error",
+      });
       return;
     }
-  
+
     try {
       // 1. Save to Firestore
       await addDoc(collection(db, "contacts"), {
         ...formData,
-        createdAt: new Date()
+        createdAt: new Date(),
       });
-  
+
       // 2. Send via EmailJS
       await emailjs.send(
         "service_i5kcoks",
@@ -61,8 +64,12 @@ function Contact() {
         },
         "HxBTk1Vgbi3xy8FjD"
       );
-  
-      setModal({ show: true, message: "Messsage sent successfully!", type: "success" });
+
+      setModal({
+        show: true,
+        message: "Messsage sent successfully!",
+        type: "success",
+      });
       console.log("Modal state updated:", modal);
 
       setFormData({
@@ -71,11 +78,15 @@ function Contact() {
         email: "",
         confirmEmail: "",
         message: "",
-        captcha: ""
+        captcha: "",
       });
     } catch (error) {
       console.error("Submission error:", error);
-      setModal({ show: true, message: "Failed to submit your message. Please try again.", type: "error" });
+      setModal({
+        show: true,
+        message: "Failed to submit your message. Please try again.",
+        type: "error",
+      });
     }
   };
 
@@ -83,10 +94,15 @@ function Contact() {
     <div className="hero1">
       {modal.show && (
         <div className="modal-overlay">
-        <div className={`reserve-modal ${modal.type}`}>
-          <p>{modal.message}</p>
-          <button onClick={() => setModal({ show: false, message: "", type: "" })} className="bg-primary">Close</button>
-        </div>
+          <div className={`reserve-modal ${modal.type}`}>
+            <p>{modal.message}</p>
+            <button
+              onClick={() => setModal({ show: false, message: "", type: "" })}
+              className="bg-primary"
+            >
+              Close
+            </button>
+          </div>
         </div>
       )}
       <main className=" bg-light px-4 contact-main ">
@@ -109,26 +125,28 @@ function Contact() {
                 <FontAwesomeIcon icon={faEnvelope} />
                 &nbsp;&nbsp;Contact Us
               </h4>
-              <span className="mb-2 fs-5 px-5">
-                Our friendly team is ready to assist you.
-              </span>
-              <p className="mb-4 fs-5 px-5 ">
-                Email:{" "}
-                <a
-                  href="mailto:estinedadjuster@gmail.com"
-                  className="text-primary"
-                >
-                  destinedadjuster@gmail.com
-                </a>
-              </p>
+              <div className="mb-4 fs-5 px-5 ">
+                <span>Our friendly team is ready to assist you.</span>
+                <p>
+                  Email:{" "}
+                  <a
+                    href="mailto:princeexecutivetransport@gmail.com"
+                    className="text-primary"
+                  >
+                    princeexecutivetransport@gmail.com
+                  </a>
+                </p>
+              </div>
 
               <h4>
                 <FontAwesomeIcon icon={faLocationDot} /> &nbsp; Office Location
               </h4>
-              <span className="px-5 fs-5">Visit Us at Our Office</span>
-              <br />
-              <span className="px-5 fs-5">9626, S. Kirkwood Road, Suite B</span>
-              <p className="px-5 fs-5">Houston, Texas. 77099</p>
+              <div className="px-5 fs-5">
+                <span>Visit Us at Our Office</span>
+                <br />
+                <span>9626, S. Kirkwood Road, Suite B</span>
+                <p>Houston, Texas. 77099</p>
+              </div>
 
               <h4>
                 <FontAwesomeIcon icon={faPhone} />
@@ -155,10 +173,10 @@ function Contact() {
               <p className="fs-5">
                 You can reach out to us anytime at{" "}
                 <a
-                  href="mailto:estinedadjuster@gmail.com"
+                  href="mailto:princeexecutivetransport@gmail.com"
                   className="text-primary"
                 >
-                  destinedadjuster@gmail.com
+                  princeexecutivetransport@gmail.com
                 </a>
               </p>
               <form onSubmit={handleSubmit}>
@@ -171,9 +189,7 @@ function Contact() {
                   </p>
                   <Row>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="firstname" className="opacity-50">
-                        First
-                      </label>
+                      <label htmlFor="firstname">First</label>
                       <br />
                       <input
                         type="text"
@@ -187,16 +203,13 @@ function Contact() {
                       />
                     </Col>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="lastname" className="opacity-50">
-                        Last
-                      </label>
+                      <label htmlFor="lastname">Last</label>
                       <br />
                       <input
                         type="text"
                         className="form-control"
                         aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-lg"
-
                         required
                         name="lastName"
                         value={formData.lastName}
@@ -215,9 +228,7 @@ function Contact() {
                   </p>
                   <Row>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="email" className="opacity-50">
-                        Enter Email
-                      </label>
+                      <label htmlFor="email">Enter Email</label>
                       <br />
                       <input
                         type="email"
@@ -231,9 +242,7 @@ function Contact() {
                       />
                     </Col>
                     <Col sm={12} md={6} lg={6}>
-                      <label htmlFor="confirm-email" className="opacity-50">
-                        Confirm Email
-                      </label>
+                      <label htmlFor="confirm-email">Confirm Email</label>
                       <br />
                       <input
                         type="email"
@@ -257,7 +266,7 @@ function Contact() {
                       (Required)
                     </span>
                   </p>
-                  <label htmlFor="comment" className="opacity-50">
+                  <label htmlFor="comment">
                     Please let us know what's on your mind. Have a question for
                     use? Ask away.
                   </label>

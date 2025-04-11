@@ -9,6 +9,10 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="fixed-top">
       <nav className="navbar navbar-expand-lg bg-primary">
@@ -26,15 +30,12 @@ function Navbar() {
             type="button"
             onClick={toggleNavbar}
           >
-            <span className="navbar-toggler-icon"></span>
             <span
               className="navbar-toggler-icon"
               aria-controls="navbarNav"
               aria-expanded={isOpen}
               aria-label="Toggle navigation"
-              >
-
-            </span>
+            ></span>
           </button>
 
           <div
@@ -45,34 +46,54 @@ function Navbar() {
           >
             <ul className="navbar-nav fs-5">
               <li className="nav-item">
-                <Link to="/about" className="nav-link text-white">
+                <Link
+                  to="/about"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   ABOUT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/services" className="nav-link text-white">
+                <Link
+                  to="/services"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   SERVICES
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link text-white">
+                <Link
+                  to="/contact"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   CONTACT
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/reservation" className="nav-link text-white">
+                <Link
+                  to="/reservation"
+                  className="nav-link text-white link"
+                  onClick={closeNavbar}
+                >
                   RESERVATION
                 </Link>
               </li>
               <li className="nav-item">
-                <p className="nav-link text-white ">
-                <span className="nav-link text-white">
+                <span className="text-white nav-link">
                   LIVE AGENTS AVAILABLE 24/7
                 </span>
-                </p>
               </li>
               <li className="nav-item">
-                <Link to={"tel:+1610-938-1411"} className="nav-link text-white">+1 610-938-1411</Link>
+                <Link
+                  to={"tel:+1610-938-1411"}
+                  className="nav-link text-white"
+                  onClick={closeNavbar}
+                >
+                  +1 610-938-1411
+                </Link>
               </li>
             </ul>
           </div>

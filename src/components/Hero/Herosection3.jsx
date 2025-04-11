@@ -9,15 +9,21 @@ function Herosection3() {
         <Row>
           <Col sm={12} md={6} lg={6}>
             <div className="hero3-box1 w-100 d-flex justify-content-center align-items-center">
-              <h2 className="py-4">
+              <h2 className="py-4 px-2">
                 Providing Door to Door <br /> Transportation Services <br />
-                Worldwide <br /> Prince Executive Transport LLC
+                Worldwide <span className="fst-italic">with</span>
+                <br /> Prince Executive Transport LLC
               </h2>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div className="hero-section3-box2 w-100">
-              <img src="/Img/hero3.png" alt="" width="100%" />
+              <img
+                src="/Img/prince suburban back 1.jpg"
+                alt=""
+                width="100%"
+                className="hero1-image"
+              />
             </div>
           </Col>
         </Row>
