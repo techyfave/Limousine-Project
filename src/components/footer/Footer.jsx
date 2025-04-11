@@ -34,10 +34,10 @@ function Footer() {
                 <li>
                   {" "}
                   <a
-                    href="mailto:agunloyeprince4@gmail.com"
+                    href="mailto:princeexecutivetransport@gmail.com"
                     className="middle-box text-decoration"
                   >
-                    agunloyeprince4@gmail.com
+                    princeexecutivetransport@gmail.com
                   </a>
                 </li>
                 <li>
