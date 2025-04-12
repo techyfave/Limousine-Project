@@ -19,7 +19,7 @@ function About2() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <div>
+            <div className="mt-5 pt-5">
               <h2 className="px-4 pt-4 fs-3">
                 Delivering Unmatched <br /> Luxury With Royal <br /> Road
               </h2>
