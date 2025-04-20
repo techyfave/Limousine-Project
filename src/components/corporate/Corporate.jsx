@@ -53,7 +53,7 @@ function Corporate() {
                 <div className="w-100">
                   <img
                     src="/Img/corporate.jpg"
-                    alt=""
+                    alt="A corporate travel image"
                     className="w-100 rounded"
                   />
                 </div>

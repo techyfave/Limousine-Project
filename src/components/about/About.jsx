@@ -70,7 +70,7 @@ function About() {
             <div className="image-parent border-rounded">
               <img
                 src="/Img/prince 3 edited.jpg"
-                alt=""
+                alt="Black Suburban."
                 className="w-100 hero1-image"
               />
             </div>

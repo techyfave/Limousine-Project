@@ -50,7 +50,7 @@ function Herosection() {
                   <div className="w-100">
                     <img
                       src="/Img/prince 1.jpg"
-                      alt=""
+                      alt="Black Suburban Image"
                       className="w-100 hero1-image mt-5"
                     />
                   </div>
@@ -61,7 +61,7 @@ function Herosection() {
                   <div className="w-100">
                     <img
                       src="/Img/prince chaffeur edited.jpg"
-                      alt=""
+                      alt="An image of capturing a Chauffer"
                       className="w-100 hero1-image mt-5"
                     />
                   </div>
@@ -99,7 +99,7 @@ function Herosection() {
                   <div className="w-100">
                     <img
                       src="/Img/hero-wedding.jpg"
-                      alt=""
+                      alt="An featuring a limousine hired for wedding"
                       className="w-100 hero1-image mt-5 "
                     />
                   </div>

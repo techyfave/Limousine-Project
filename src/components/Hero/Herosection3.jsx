@@ -20,9 +20,9 @@ function Herosection3() {
             <div className="hero-section3-box2 w-100">
               <img
                 src="/Img/first-container-image 1.png"
-                alt=""
+                alt="Image featuring containing delivery to door post."
                 width="100%"
-                className="hero1-image"
+                className=""
               />
             </div>
           </Col>

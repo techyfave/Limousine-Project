@@ -54,7 +54,7 @@ function Legal() {
               <div className="w-100 mt-5">
                 <img
                   src="/Img/legal-transporatation.jpg"
-                  alt=""
+                  alt="A legal travel image."
                   className="w-100 rounded"
                 />
               </div>

@@ -13,7 +13,7 @@ function About2() {
             <div className="w-100">
               <img
                 src="/Img/prine interior 2 edidted.jpg"
-                alt=""
+                alt="Suburban Interior."
                 className="w-100 hero1-image"
               />
             </div>

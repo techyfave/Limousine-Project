@@ -55,7 +55,7 @@ function Services1() {
               <div className="w-100 mx-0">
                 <img
                   src="/Img/prince 1.jpg"
-                  alt=""
+                  alt="A picture of a Suburban"
                   className="w-100 hero1-image"
                   title="A White Limousine in The City"
                 />
